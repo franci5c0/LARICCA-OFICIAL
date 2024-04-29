@@ -24,6 +24,7 @@
         --sienna: #A0522D;
         --saddlebrown: #8B4513;
         --darkred: #8B0000;
+        --steelblue: #4682B4;
     }
     /*links gerais*/
      a {
@@ -37,7 +38,7 @@
         /*lista separada do header*/
 
    .titulo2 {
-background-color: var(--saddlebrown);
+background-color: var(--steelblue);
 text-align: center;
 font-family: "Raleway", cursive;
 color: var(--black);
@@ -53,8 +54,11 @@ font-family: "Sedan", cursive;
     align-items: center;
     font-size: 19px;;
     list-style: none;
+    cursor: pointer;
 }
+
 /*titulo principal*/
+
 .titulo-principal {
 text-align: center;
 font-size: 50px;
@@ -67,9 +71,6 @@ cursor: pointer;
     color: var(--crimson);
 }
 
-.drink-list:hover {
-    color: var(--crimson);
-}
 .topo-do-site {
     background-color: var(--white);
     display: flex;
@@ -78,17 +79,9 @@ cursor: pointer;
     background-size: 100%;
 }
 
-.image-container {
-    width: 250px;
-}
-
 .topo-do-site img {
     width: 200px;
     max-height: auto;
-}
-
-.banner-container-carrinho {
-        justify-content: flex-end;
 }
 
 /*PRINCIPAL*/
@@ -98,16 +91,16 @@ cursor: pointer;
     background-image: url(funto-amadeirado.jpg);
     background-size: 100% 120%;
     background-repeat: no-repeat;
-  
 }
 
+/*index*/
 .sugestao-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
     margin: 10px;
-
 }
 
+/*index*/
 .sugestao-container img {
     width: 310px;
     margin-left: 35px;
@@ -115,6 +108,7 @@ cursor: pointer;
     border: outset var(--bisque) 10px;
 }
 
+/*
 .titulo3 {
     background-color: var(--black);
     text-align: center;
@@ -125,27 +119,34 @@ cursor: pointer;
     font-family: "Sedan", cursive;
     border: outset var(--black) 3px;
     }
-    
+    */
+
+    /*index*/
 .input-botao {
   text-align: center;
-  
+  max-width: 30px;
+
 }
 
-.drink-container {
+/*drink*/
+.menu-container {
 display: flex;
 flex-direction: column;
+background-image: url(amarelo.jpg);
+background-size: 200%;
 }
 
+/*geral*/
 .link-header img {
     width: 60px;
 }
 
-.drink-container img {
+/*section | drink*/
+.menu-container img {
     width: 510px;
     margin-left: 35px;
     border-radius: 20px;
     border: outset var(--navajo) 10px;
-  
 }
 /*titulo | Drink */
 .titulodrink {
@@ -157,12 +158,7 @@ flex-direction: column;
     font-size: 60px;
 }
 
-.subtitulo-container {
-   display: flex;
-    font-family: "Sedan", cursive;
-    font-size: 20px;
-}
-
+/*geral*/
 .rodape {
     background-color: #00FF00;
     font-family: "sedan" , cursive;
@@ -170,32 +166,85 @@ flex-direction: column;
     border: outset crimson 15px;
 }
 
-/*botões*/
+/*
 .input {
     height: 40px;
     width: 100px;
  border-radius: 10px;
 }
+*/
+
+/*
+.botao {
+height: 40px;
+width: 100px;
+border-radius: 10px;
+margin: 5px;
+}
+*/
+
+/*div | drinks*/
+.div-container {
+display: flex;
+}
+
+/*descrição | drinks*/
+.descricao-menu {
+margin: 150px;
+font-family: "sedan" , cursive;
+font-size: 40px; 
+}
+
+/*botao | drinks*/
+.button-input {
+   margin-left: 180px;
+}
+
+/*ingredientes | menu*/
+.ingredientes {
+font-size: 25px;
+text-align: center;
+
+}
+
+
+/*COMANDOS ALTERADOS*/
+
+span {  /*adicionado*/
+margin-right: 10px;
+font-size: 25px;
+font-family: "Sedan", cursive;
+}
+
+.input {
+    height: 50px; /*alterado*/
+    width: 100px;
+ border-radius: 10px;
+}
 
 .botao {
-    height: 40px;
-    width: 100px;
+height: 50px; /*alterado*/
+width: 100px;
 border-radius: 10px;
 margin: 5px;
 }
 
-.div-container {
-    display: flex;
-}
-
-.descricao-menu {
-margin: 150px;
-    font-family: "sedan" , cursive;
-    font-size: 40px;
-   
-      
-}
-
 .button-input {
-   margin-left: 180px;
-}
+    margin-left: 120px; /*alterado*/
+ }
+
+ .titulo3 {
+    text-align: center;
+    color: var(--black); /*alterado*/
+    margin: 25px;
+    padding: 5px;
+    font-family: "Sedan", cursive;
+    border-bottom: solid 2px; /*alterado*/
+    }
+    
+    .alcool { /*adicionado*/
+text-align: center;
+margin: 40px;
+font-size: 40px;
+color: var(--chocolate);
+    }
