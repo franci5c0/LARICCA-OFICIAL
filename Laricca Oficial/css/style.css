@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -86,12 +87,14 @@ cursor: pointer;
 
 /*PRINCIPAL*/
 
+/*
 .corpo {
     background-color: var(--cornsilk);
     background-image: url(funto-amadeirado.jpg);
     background-size: 100% 120%;
     background-repeat: no-repeat;
 }
+*/
 
 /*index*/
 .sugestao-container {
@@ -128,26 +131,29 @@ cursor: pointer;
 
 }
 
-/*drink*/
+/*
 .menu-container {
 display: flex;
 flex-direction: column;
 background-image: url(amarelo.jpg);
 background-size: 200%;
 }
+*/
 
 /*geral*/
 .link-header img {
     width: 60px;
 }
 
-/*section | drink*/
+/*
 .menu-container img {
     width: 510px;
     margin-left: 35px;
     border-radius: 20px;
     border: outset var(--navajo) 10px;
 }
+*/
+
 /*titulo | Drink */
 .titulodrink {
     text-align: center;
@@ -200,7 +206,7 @@ font-size: 40px;
    margin-left: 180px;
 }
 
-/*ingredientes | menu*/
+/*ingredientes | menu */
 .ingredientes {
 font-size: 25px;
 text-align: center;
@@ -220,6 +226,9 @@ font-family: "Sedan", cursive;
     height: 50px; /*alterado*/
     width: 100px;
  border-radius: 10px;
+ text-align: center; /*adicionado*/
+ font-size: 20px; /*adicionado*/
+ font-family: "Overpass", cursive;
 }
 
 .botao {
@@ -227,6 +236,13 @@ height: 50px; /*alterado*/
 width: 100px;
 border-radius: 10px;
 margin: 5px;
+cursor: pointer; /*adicionado*/
+font-size: 20px; /*adicionado*/
+font-family: "Overpass", cursive;
+}
+
+.botao:hover { /*adicionado*/
+background-color: var(--chocolate); /*adicionado*/
 }
 
 .button-input {
@@ -240,6 +256,7 @@ margin: 5px;
     padding: 5px;
     font-family: "Sedan", cursive;
     border-bottom: solid 2px; /*alterado*/
+    font-size: 0px;
     }
     
     .alcool { /*adicionado*/
@@ -248,3 +265,47 @@ margin: 40px;
 font-size: 40px;
 color: var(--chocolate);
     }
+
+.menu-container {
+    display: flex;
+     flex-direction: column;
+     background-image: url(Yellow-Gradient.webp); /*alterado*/
+     background-size: 800%; /*alterado*/
+     background-repeat: no-repeat;
+     }
+
+
+     .corpo {
+        background-color: var(--cornsilk);
+        background-image: url(silver-gradient-with-highlights-vector-26457044.webp); /*alterado*/
+        background-size: 100% 120%;
+        background-repeat: no-repeat;
+    }
+
+    .menu-container img {
+        width: 510px;
+        margin-left: 35px;
+        border-radius: 20px;
+        border: outset var(--gray1) 5px; /*alterado*/
+    }
+
+.links-lista { /*adicionado*/ /*classe strong lista*/
+margin-left: 14px;
+}
+
+.links-lista:hover { /*adicionado*/
+color: var(--chocolate);
+}
+
+
+
+
+    /*media*/
+@media (max-width: 1366px) {
+
+.ingredientes { /*alterar futuramente em outra resolução*/
+    font-size: 25px;
+    margin-left: 360px;
+    }
+
+}
