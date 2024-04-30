@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -28,6 +27,7 @@
         --steelblue: #4682B4;
         --dimgray: #696969;
         --lightslategray: #778899;
+        --silver: #C0C0C0;
     }
     /*links gerais*/
      a {
@@ -41,14 +41,15 @@
         /*lista separada do header*/
 
    .titulo2 {
-background-color: var(--steelblue);
+background-color: var(--black);
 text-align: center;
 font-family: "Raleway", cursive;
-color: var(--black);
+color: var(--silver);
 border-radius: 10px;
 margin: 25px;
 padding: 5px;
 font-family: "Sedan", cursive;
+border: outset var(--crimson) 5px;
 }
 
 .link-header {
@@ -74,15 +75,15 @@ cursor: pointer;
     color: var(--crimson);
 }
 
-/*
 .topo-do-site {
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
     background-image: url(funto-site.png);
-    background-size: 100%;
+    background-size: 100% 220%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-*/
 
 .topo-do-site img {
     width: 200px;
@@ -91,14 +92,12 @@ cursor: pointer;
 
 /*PRINCIPAL*/
 
-/*
 .corpo {
     background-color: var(--cornsilk);
-    background-image: url(funto-amadeirado.jpg);
+    background-image: url(silver-gradient-with-highlights-vector-26457044.webp); /*alterado*/
     background-size: 100% 120%;
     background-repeat: no-repeat;
 }
-*/
 
 /*index*/
 .sugestao-container {
@@ -112,10 +111,10 @@ cursor: pointer;
     width: 310px;
     margin-left: 35px;
     border-radius: 20px;
-    border: outset var(--bisque) 10px;
+    border: outset var(--black) 5px;
 }
 
-/*
+/*geral*/
 .titulo3 {
     background-color: var(--black);
     text-align: center;
@@ -126,31 +125,101 @@ cursor: pointer;
     font-family: "Sedan", cursive;
     border: outset var(--black) 3px;
     }
-    */
+    
+    /*botões | index*/
+.input-botao {
+margin-left: 100px;
+  max-width: 30px;
 
-
-/*
-.menu-container {
-display: flex;
-flex-direction: column;
-background-image: url(amarelo.jpg);
-background-size: 200%;
 }
-*/
+
+/*sessões de drinks diferentes*/
+.alcool {
+    text-align: center;
+    margin: 80px;
+    font-size: 40px;
+    color: var(--dimgray);
+        }
+    
+
+/*drink*/
+.menu-container {
+    display: flex;
+     flex-direction: column;
+     background-image: url(); 
+     background-size: 800%; 
+     background-repeat: no-repeat;
+     align-items: center; 
+     }
 
 /*geral*/
 .link-header img {
     width: 60px;
 }
 
-/*
+hr {
+
+    border-bottom: solid 4px var(--black);
+}
+
+/*section | drink*/
 .menu-container img {
     width: 510px;
     margin-left: 35px;
     border-radius: 20px;
     border: outset var(--navajo) 10px;
 }
-*/
+
+
+/*ANIMAÇÕES*/
+.menu-container img:hover {
+    margin-left: 35px;
+    border-radius: 20px;
+    border: outset var(--navajo) 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 800px;
+    cursor: pointer;
+}
+
+.links-lista:hover { 
+    color: var(--lightslategray);
+    }
+
+
+.botao:hover { 
+    background-color: var(--lightslategray); 
+    transition-property: all;
+    transition-duration: 1s;
+    width: 200px;
+    height: 100px;
+    }
+
+
+/*preço*/
+span {  
+    margin-right: 10px;
+    font-size: 25px;
+    font-family: "Sedan", cursive;
+    }
+
+
+
+/*lista e cores da lista*/
+.links-lista { 
+    margin-left: 14px;
+    }
+    
+/*espaços entre as imagens do menu*/
+.hr { 
+    margin: 40px;
+    height: 9px;
+    background-color: var(--black);
+    width: 98%; /*adicionado*/
+    border-radius: 20px;
+    border: outset 2px var(--crimson);
+    }
+    
 
 /*titulo | Drink */
 .titulodrink {
@@ -170,22 +239,27 @@ background-size: 200%;
     border: outset crimson 15px;
 }
 
-/*
+/*botões | drinks*/
 .input {
-    height: 40px;
+    height: 50px; /*alterado*/
     width: 100px;
  border-radius: 10px;
+ text-align: center; /*adicionado*/
+ font-size: 20px; /*adicionado*/
+ font-family: "Overpass", cursive;
 }
-*/
 
-/*
+/*botao | drink*/
 .botao {
-height: 40px;
-width: 100px;
-border-radius: 10px;
-margin: 5px;
-}
-*/
+    height: 50px; 
+    width: 100px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer; 
+    font-size: 20px; 
+    font-family: "Overpass", cursive;
+    }
+    
 
 /*div | drinks*/
 .div-container {
@@ -201,159 +275,31 @@ font-size: 40px;
 
 /*botao | drinks*/
 .button-input {
-   margin-left: 180px;
-}
-
-/*
-.ingredientes {
-font-size: 25px;
-text-align: center;
-
-}
-*/
-
-.input-botao {
-    text-align: center;
-}
-
-input {
-    height: 50px; /*alterado*/
-    width: 100px;
- border-radius: 10px;
- text-align: center; /*adicionado*/
- font-size: 20px; /*adicionado*/
- font-family: "Overpass", cursive;
-
-}
-
-button {
-    height: 50px; /*alterado*/
-    width: 100px;
-    border-radius: 10px;
-    margin: 5px;
-    cursor: pointer; /*adicionado*/
-    font-size: 20px; /*adicionado*/
-    font-family: "Overpass", cursive;
-
-}
-
-/*COMANDOS ALTERADOS*/
-
-span {  /*adicionado*/
-margin-right: 10px;
-font-size: 25px;
-font-family: "Sedan", cursive;
-}
-
-.input {
-    height: 50px; /*alterado*/
-    width: 100px;
- border-radius: 10px;
- text-align: center; /*adicionado*/
- font-size: 20px; /*adicionado*/
- font-family: "Overpass", cursive;
-}
-
-.botao {
-height: 50px; /*alterado*/
-width: 100px;
-border-radius: 10px;
-margin: 5px;
-cursor: pointer; /*adicionado*/
-font-size: 20px; /*adicionado*/
-font-family: "Overpass", cursive;
-}
-
-.botao:hover { /*adicionado*/
-background-color: var(--chocolate); /*adicionado*/
-}
-
-.button-input {
-margin-right: 760px; /*alterado*/
- }
-
- .titulo3-drink {
-    text-align: center;
-    color: var(--black); /*alterado*/
-    margin: 25px;
-    padding: 5px;
-    font-family: "Sedan", cursive;
-    border-bottom: solid 2px; /*alterado*/
-    font-size: 0px;
-    }
-    
-    .alcool { /*adicionado*/
-text-align: center;
-margin: 80px;
-font-size: 40px;
-color: var(--dimgray);
-    }
-
-.menu-container {
-    display: flex;
-     flex-direction: column;
-     background-image: url(); /*alterado*/
-     background-size: 800%; /*alterado*/
-     background-repeat: no-repeat;
-     align-items: center; /*adicionado*/
+    margin-right: 600px;
      }
 
-
-     .corpo {
-        background-color: var(--cornsilk);
-        background-image: url(silver-gradient-with-highlights-vector-26457044.webp); /*alterado*/
-        background-size: 100% 120%;
-        background-repeat: no-repeat;
-    }
-
-    .menu-container img {
-        width: 510px;
-        margin-left: 35px;
-        border-radius: 20px;
-        border: outset var(--crimson) 5px; /*alterado*/
-    }
-
-.links-lista { /*adicionado*/ /*classe strong lista*/
-margin-left: 14px;
-}
-
-.links-lista:hover { /*adicionado*/
-color: var(--chocolate);
-}
-
-.hr { /*adicionado*/
-margin: 40px;
-height: 9px;
-background-color: var(--black);
-width: 98%; /*adicionado*/
-border-radius: 20px;
-border: outset 2px var(--crimson);
-}
-
+/*ingredientes | menu*/
 .ingredientes {
     font-size: 25px;
-margin-left: 550px; /*adicionado*/
+margin-left: 550px;
+    }
+
+    /*botão | index*/
+    button {
+        height: 50px; 
+        width: 100px;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer; 
+        font-size: 20px; 
+        font-family: "Overpass", cursive;
+    margin-left: 50px;
     }
 
 
-    .topo-do-site {
-        background-color: var(--white);
-        display: flex;
-        justify-content: space-between;
-        background-image: url(funto-site.png);
-        background-size: 100% 220%;
-        background-position: center;
-        background-repeat: no-repeat;
+    input {
+
+        height: 30px;
+text-align: center;
+           font-size: 15px;
     }
-    
-
-
-    /*media*/
-@media (max-width: 1366px) {
-
-.ingredientes { /*alterar futuramente em outra resolução*/
-    font-size: 25px;
-    margin-left: 360px;
-    }
-
-}
