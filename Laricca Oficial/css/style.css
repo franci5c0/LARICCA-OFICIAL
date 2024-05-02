@@ -146,10 +146,7 @@ margin-left: 100px;
 .menu-container {
     display: flex;
      flex-direction: column;
-     background-image: url(); 
-     background-size: 800%; 
-     background-repeat: no-repeat;
-     align-items: center; 
+     align-items: center;
      }
 
 /*geral*/
@@ -171,16 +168,19 @@ hr {
 }
 
 
+
 /*ANIMAÇÕES*/
 .menu-container img:hover {
-    margin-left: 35px;
-    border-radius: 20px;
+    margin-left: 30px;
+    border-radius: 15px;
     border: outset var(--navajo) 10px;
-    transition-property: all;
-    transition-duration: 1s;
-    width: 800px;
+    /*transition-property: all;
+    transition-duration: 0.3s;
+    width: 800px;*/
     cursor: pointer;
+    transform: scale(1.1);
 }
+
 
 .links-lista:hover { 
     color: var(--lightslategray);
@@ -190,9 +190,9 @@ hr {
 .botao:hover { 
     background-color: var(--lightslategray); 
     transition-property: all;
-    transition-duration: 1s;
-    width: 200px;
-    height: 100px;
+    transition-duration: 0.3s;
+    width: 120px;
+    height: 60px;
     }
 
 
@@ -265,6 +265,7 @@ span {
 .div-container {
 display: flex;
 }
+
 
 /*descrição | drinks*/
 .descricao-menu {
