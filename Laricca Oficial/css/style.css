@@ -162,7 +162,6 @@ hr {
 /*section | drink*/
 .menu-container img {
     width: 510px;
-    margin-left: 35px;
     border-radius: 20px;
     border: outset var(--navajo) 10px;
 }
@@ -171,14 +170,7 @@ hr {
 
 /*ANIMAÇÕES*/
 .menu-container img:hover {
-    margin-left: 30px;
-    border-radius: 15px;
-    border: outset var(--navajo) 10px;
-    /*transition-property: all;
-    transition-duration: 0.3s;
-    width: 800px;*/
-    cursor: pointer;
-    transform: scale(1.1);
+ 
 }
 
 
@@ -189,10 +181,6 @@ hr {
 
 .botao:hover { 
     background-color: var(--lightslategray); 
-    transition-property: all;
-    transition-duration: 0.3s;
-    width: 120px;
-    height: 60px;
     }
 
 
