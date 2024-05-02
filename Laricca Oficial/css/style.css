@@ -143,11 +143,13 @@ text-align: center;
            font-size: 15px;
            margin: auto;}
 
-
-
 /*HOVER*/
 .titulo-principal:hover { /*localizado no index*/
     color: var(--crimson);}
+
+    .sugestao-container img:hover {
+   
+    }
 
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
