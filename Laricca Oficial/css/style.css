@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     margin: 0;
@@ -29,18 +30,79 @@
         --lightslategray: #778899;
         --silver: #C0C0C0;
     }
-    /*links gerais*/
-     a {
+  
+/*GERAL*/
+     a { /*links8*/
         margin: 10px;
         text-decoration: none;
         color: black;
         font-size: 20px;
-        text-transform: uppercase;
-        }
+        text-transform: uppercase;}
 
-        /*lista separada do header*/
+        .link-header img {
+    width: 60px;}
 
-   .titulo2 {
+.topo-do-site { /*header*/
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    background-image: url(funto-site.png);
+    background-size: 100% 220%;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+.topo-do-site img { /*imagem | header*/
+    width: 200px;
+    max-height: auto;}
+
+.corpo { /*principal*/
+    background-color: var(--cornsilk);
+    background-image: url(silver-gradient-with-highlights-vector-26457044.webp);
+    background-size: 100% 120%;
+    background-repeat: no-repeat;}
+
+.link-header { /*links | header*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;;
+    list-style: none;
+    cursor: pointer;}
+
+span {  /*preços*/
+    margin-right: 10px;
+    font-size: 25px;
+    font-family: "Sedan", cursive;
+    margin: auto;}
+
+    .links-lista { /*centralizador dos nomes da lista*/
+    margin-left: 14px;}
+
+    .rodape {
+    background-color: #00FF00;
+    font-family: "sedan" , cursive;
+    font-size: 30px;
+    border: outset crimson 15px;}
+
+/*INDEX*/
+.titulo-principal { /*titulo do index*/
+text-align: center;
+font-size: 50px;
+font-family: "Sedan", cursive;
+margin: 10px;
+cursor: pointer;}
+
+button { /*botões do index*/
+        height: 50px; 
+        width: 100px;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer; 
+        font-size: 20px; 
+        font-family: "Overpass", cursive;
+    margin-left: 50px;}
+
+ .titulo2 { /*titulo secundário do index*/
 background-color: var(--black);
 text-align: center;
 font-family: "Raleway", cursive;
@@ -49,73 +111,9 @@ border-radius: 10px;
 margin: 25px;
 padding: 5px;
 font-family: "Sedan", cursive;
-border: outset var(--crimson) 5px;
-}
+border: outset var(--crimson) 5px;}
 
-.link-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 19px;;
-    list-style: none;
-    cursor: pointer;
-}
-
-/*titulo principal*/
-
-.titulo-principal {
-text-align: center;
-font-size: 50px;
-font-family: "Sedan", cursive;
-margin: 10px;
-cursor: pointer;
-}
-
-.titulo-principal:hover {
-    color: var(--crimson);
-}
-
-.topo-do-site {
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    background-image: url(funto-site.png);
-    background-size: 100% 220%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.topo-do-site img {
-    width: 200px;
-    max-height: auto;
-}
-
-/*PRINCIPAL*/
-
-.corpo {
-    background-color: var(--cornsilk);
-    background-image: url(silver-gradient-with-highlights-vector-26457044.webp); /*alterado*/
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-}
-
-/*index*/
-.sugestao-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
-    margin: 10px;
-}
-
-/*index*/
-.sugestao-container img {
-    width: 310px;
-    margin-left: 35px;
-    border-radius: 20px;
-    border: outset var(--black) 5px;
-}
-
-/*geral*/
-.titulo3 {
+.titulo3 { /*nomes das sugestões no index*/
     background-color: var(--black);
     text-align: center;
     color: var(--white);
@@ -123,173 +121,106 @@ cursor: pointer;
     margin: 25px;
     padding: 5px;
     font-family: "Sedan", cursive;
-    border: outset var(--black) 3px;
-    }
+    border: outset var(--black) 3px;}
     
-    /*botões | index*/
-.input-botao {
+.input-botao { /*botões do inex*/
 margin-left: 100px;
-  max-width: 30px;
+  max-width: 30px;}
 
-}
+.sugestao-container { /*sessão | index*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
+    margin: 10px;}
 
-/*sessões de drinks diferentes*/
-.alcool {
+.sugestao-container img { /*imagem | sessão | index*/
+    width: 310px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: outset var(--black) 5px;}
+
+/*HOVER*/
+.titulo-principal:hover { /*localizado no index*/
+    color: var(--crimson);}
+
+/*MENUS*/
+.alcool { /*sessões de drinks | menus*/
     text-align: center;
     font-size: 40px;
     color: var(--dimgray);
-    margin: 20px;
-        }
-    
-
-/*drink*/
-.menu-container {
+    margin: 20px;}
+        
+.menu-container { /*Sessão | menus*/
     display: flex;
-     flex-direction: column;
+     flex-direction: column;}
  
-     }
-
-/*geral*/
-.link-header img {
-    width: 60px;
-}
-
-
-
-/*section | drink*/
-.menu-container img {
+.menu-container img { /*imagem | sessão | menus*/
     width: 510px;
     margin-left: 35px;
     border-radius: 20px;
-    border: outset var(--black) 10px;
-}
+    border: outset var(--black) 10px;}
 
-
-/*ANIMAÇÕES*/
-
-
-
-/*preço*/
-span {  
-    margin-right: 10px;
-    font-size: 25px;
-    font-family: "Sedan", cursive;
-    margin: auto;
-    }
-
-.teste {
-    display: flex;
-}
-
-/*lista e cores da lista*/
-.links-lista { 
-    margin-left: 14px;
-    }
-    
-/*espaços entre as imagens do menu*/
-.hr { 
+.hr { /*espaços entre as divs dos menus*/
     margin: 40px;
     height: 9px;
     background-color: var(--black);
-    width: 98%; 
+    width: 95%; 
     border-radius: 20px;
-    border: outset 2px var(--crimson);
-    }
+    border: outset 2px var(--crimson);}
     
-    hr {
+    hr { /*espaço entre as divs dos menus (sem classe)*/
+    border-bottom: solid 4px var(--black);}
 
-    border-bottom: solid 4px var(--black);
-}
-
-
-/*titulo | Drink */
-.titulodrink {
+.titulodrink { /*Usado no menu de drinks*/
     text-align: center;
     margin: 25px;
     padding: 5px;
     font-family: "Sedan", cursive;
     color: var(--black);
-    font-size: 60px;
-}
+    font-size: 60px;}
 
-/*geral*/
-.rodape {
-    background-color: #00FF00;
-    font-family: "sedan" , cursive;
-    font-size: 30px;
-    border: outset crimson 15px;
-}
-
-/*botões | drinks*/
-.input {
+.input {/*caixas de texto dos menus*/
     height: 50px; 
     width: 100px;
  border-radius: 10px;
  text-align: center; 
- font-size: 20px;
- font-family: "Overpass", cursive;
-}
+ font-size: 40px;
+ font-family: "Cormorant Garamond", cursive;}
 
-/*botao | drink*/
-.botao {
+.botao { /*botões dos menus*/
     height: 50px; 
     width: 100px;
     border-radius: 10px;
     margin: auto;
     cursor: pointer; 
-    font-size: 20px; 
-    font-family: "Overpass", cursive;
-    }
-    
+    font-size: 23px; 
+    font-family: "Cormorant Garamond", cursive;}
 
-/*div | drinks*/
-.div-container {
+.div-container { /*div das imagens dos menus*/
 display: flex;
 flex-direction: initial;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px;}
 
-
-
-/*descrição | drinks*/
-.descricao-menu {
+.descricao-menu { /*descrição dos pratos dos menus*/
 font-family: "sedan" , cursive;
 font-size: 40px; 
-margin: 150px;
-
-}
-
-/*botao | drinks*/
+/*margin: 150px; ----> /*em observação
+margin-right: 20px;*/
+margin: auto;}
+/*
 .button-input { 
-margin-right: 600px;
-
-     }
-
-
-/*ingredientes | menu*/
-.ingredientes {
+margin-right: 600px;} */ /*---> COMENTADO NO HTML*/
+     
+.ingredientes { /*parágrafo dos menus*/
 font-size: 25px;
 padding: 1px;
-margin: auto;
-    }
-
-    /*botão | index*/
-    button {
-        height: 50px; 
-        width: 100px;
-        border-radius: 10px;
-        margin: 5px;
-        cursor: pointer; 
-        font-size: 20px; 
-        font-family: "Overpass", cursive;
-    margin-left: 50px;
-    }
-
-
-    input {
-
+margin: auto;}
+ 
+    input { /*caixas de texto dos menus*/
         height: 30px;
 text-align: center;
            font-size: 15px;
-           margin: auto;
-    }
+           margin: auto;}
+           
+    
+
+/*ESPAÇO RESERVADO PARA FUTUROS @MEDIAS*/
