@@ -33,9 +33,10 @@
   
 /*GERAL*/
      a { /*links8*/
-        margin: 10px;
+        
         text-decoration: none;
         color: black;
+        margin: 8px;
         font-size: 20px;
         text-transform: uppercase;}
 
@@ -52,8 +53,7 @@
     background-repeat: no-repeat;}
 
 .topo-do-site img { /*imagem | header*/
-    width: 200px;
-    max-height: auto;}
+    width: 200px;}
 
 .corpo { /*principal*/
     background-color: var(--cornsilk);
@@ -119,13 +119,12 @@ border: outset var(--crimson) 5px;}
     color: var(--white);
     border-radius: 10px;
     margin: 25px;
-    padding: 5px;
     font-family: "Sedan", cursive;
     border: outset var(--black) 3px;}
     
 .input-botao { /*botões do inex*/
-margin-left: 100px;
-  max-width: 30px;}
+margin-left: 35px;}
+
 
 .sugestao-container { /*sessão | index*/
     display: grid;
@@ -137,6 +136,14 @@ margin-left: 100px;
     margin-left: 35px;
     border-radius: 20px;
     border: outset var(--black) 5px;}
+
+    input { /*caixas de texto do index*/
+        height: 30px;
+text-align: center;
+           font-size: 15px;
+           margin: auto;}
+
+
 
 /*HOVER*/
 .titulo-principal:hover { /*localizado no index*/
@@ -200,27 +207,79 @@ display: flex;
 flex-direction: initial;
     margin-bottom: 50px;}
 
-.descricao-menu { /*descrição dos pratos dos menus*/
+.descricao-menu{ /*descrição dos pratos dos menus*/
 font-family: "sedan" , cursive;
 font-size: 40px; 
 /*margin: 150px; ----> /*em observação
 margin-right: 20px;*/
 margin: auto;}
+
 /*
 .button-input { 
 margin-right: 600px;} */ /*---> COMENTADO NO HTML*/
      
-.ingredientes { /*parágrafo dos menus*/
+.ingredientes{ /*parágrafo dos menus*/
 font-size: 25px;
 padding: 1px;
 margin: auto;}
  
-    input { /*caixas de texto dos menus*/
-        height: 30px;
-text-align: center;
-           font-size: 15px;
-           margin: auto;}
-           
-    
-
 /*ESPAÇO RESERVADO PARA FUTUROS @MEDIAS*/
+
+@media (min-width: 320px){
+    /*@media do index | 320px*/
+.sugestao-container img { /*media das imagens das sessões*/
+    width: 80%;
+    align-items: center;}
+
+a{
+    margin: 0px;}/*media dos links*/
+
+.titulo3 { /*media dos nomes*/
+ align-items: center;}
+
+.input-botao { /*media dos botões*/
+align-items: center;}
+
+.sugestao-container { /*media das sessões*/
+    margin: 0px;}
+
+.topo-do-site img { /*media do banner*/
+width: 20%;}
+
+.link-header img { /*media dos ícones*/
+    width: 40px;}
+
+.links-lista { /*media dos links da lista*/
+    margin-left: 0px;}}
+
+    /*@media do index | 375px*/
+@media (min-width: 375px){
+input {
+margin-left: 35px;} /*media das caixas de texto*/
+
+button { /*media dos botões*/
+    margin-left: 85px;
+    margin-bottom: 15px;}}
+
+/*@media do index | 425px*/
+@media (min-width: 425px){
+    input{ /*media das caixas de texto*/
+margin-left: 55px;}
+
+button{ /*media dos botões*/
+margin-left: 105px;}}
+
+/*@media do index | 768px*/
+@media (min-width: 768px){
+input{ /*media das caixas de texto*/
+margin-left: 40px;}
+
+button{ /*media dos botões*/
+    margin-left: 90px;}
+
+.topo-do-site img { /*media do banner*/
+    width: 45%;
+    margin-left: 0px;}
+
+
+}
