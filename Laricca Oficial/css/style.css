@@ -238,7 +238,7 @@ a{
  align-items: center;}
 
 .input-botao { /*media dos botões*/
-align-items: center;}
+margin-left: 65px;}
 
 .sugestao-container { /*media das sessões*/
     margin: 0px;}
@@ -279,7 +279,10 @@ button{ /*media dos botões*/
 
 .topo-do-site img { /*media do banner*/
     width: 45%;
-    margin-left: 0px;}
+    margin-left: 0px;}}
 
-
+@media (min-width: 1024px){
+.input-botao {
+margin-left: 35px;
+}
 }
