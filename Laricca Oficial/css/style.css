@@ -136,9 +136,9 @@ margin-left: 100px;
 /*sessões de drinks diferentes*/
 .alcool {
     text-align: center;
-    margin: 80px;
     font-size: 40px;
     color: var(--dimgray);
+    margin: 20px;
         }
     
 
@@ -146,7 +146,7 @@ margin-left: 100px;
 .menu-container {
     display: flex;
      flex-direction: column;
-     align-items: center;
+ 
      }
 
 /*geral*/
@@ -154,34 +154,19 @@ margin-left: 100px;
     width: 60px;
 }
 
-hr {
 
-    border-bottom: solid 4px var(--black);
-}
 
 /*section | drink*/
 .menu-container img {
     width: 510px;
+    margin-left: 35px;
     border-radius: 20px;
-    border: outset var(--navajo) 10px;
+    border: outset var(--black) 10px;
 }
-
 
 
 /*ANIMAÇÕES*/
-.menu-container img:hover {
- 
-}
 
-
-.links-lista:hover { 
-    color: var(--lightslategray);
-    }
-
-
-.botao:hover { 
-    background-color: var(--lightslategray); 
-    }
 
 
 /*preço*/
@@ -189,9 +174,12 @@ span {
     margin-right: 10px;
     font-size: 25px;
     font-family: "Sedan", cursive;
+    margin: auto;
     }
 
-
+.teste {
+    display: flex;
+}
 
 /*lista e cores da lista*/
 .links-lista { 
@@ -203,11 +191,16 @@ span {
     margin: 40px;
     height: 9px;
     background-color: var(--black);
-    width: 98%; /*adicionado*/
+    width: 98%; 
     border-radius: 20px;
     border: outset 2px var(--crimson);
     }
     
+    hr {
+
+    border-bottom: solid 4px var(--black);
+}
+
 
 /*titulo | Drink */
 .titulodrink {
@@ -229,11 +222,11 @@ span {
 
 /*botões | drinks*/
 .input {
-    height: 50px; /*alterado*/
+    height: 50px; 
     width: 100px;
  border-radius: 10px;
- text-align: center; /*adicionado*/
- font-size: 20px; /*adicionado*/
+ text-align: center; 
+ font-size: 20px;
  font-family: "Overpass", cursive;
 }
 
@@ -242,7 +235,7 @@ span {
     height: 50px; 
     width: 100px;
     border-radius: 10px;
-    margin: 5px;
+    margin: auto;
     cursor: pointer; 
     font-size: 20px; 
     font-family: "Overpass", cursive;
@@ -252,25 +245,32 @@ span {
 /*div | drinks*/
 .div-container {
 display: flex;
+flex-direction: initial;
+    margin-bottom: 50px;
 }
+
 
 
 /*descrição | drinks*/
 .descricao-menu {
-margin: 150px;
 font-family: "sedan" , cursive;
 font-size: 40px; 
+margin: 150px;
+
 }
 
 /*botao | drinks*/
-.button-input {
-    margin-right: 600px;
+.button-input { 
+margin-right: 600px;
+
      }
+
 
 /*ingredientes | menu*/
 .ingredientes {
-    font-size: 25px;
-margin-left: 550px;
+font-size: 25px;
+padding: 1px;
+margin: auto;
     }
 
     /*botão | index*/
@@ -291,4 +291,5 @@ margin-left: 550px;
         height: 30px;
 text-align: center;
            font-size: 15px;
+           margin: auto;
     }
