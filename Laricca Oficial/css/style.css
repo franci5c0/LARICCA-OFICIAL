@@ -29,6 +29,8 @@
         --dimgray: #696969;
         --lightslategray: #778899;
         --silver: #C0C0C0;
+        --gray: #808080;
+        --Dimgray: #696969;
     }
   
 /*GERAL*/
@@ -43,19 +45,23 @@
         .link-header img {
     width: 60px;}
 
-.topo-do-site { /*header*/
-    background-color: var(--white);
+/*header*/
+.topo-do-site{ 
     display: flex;
-    justify-content: space-between;
-    background-image: url(funto-site.png);
-    background-size: 100% 220%;
-    background-position: center;
+    background-image: url(goku.gif);
     background-repeat: no-repeat;
-padding-bottom: 150px;
+    background-size: 100% 120%;
+   background-color: var(--silver);
+  /* width: 600px;
+   margin-left: auto;
+   margin-right: auto;*/
+  
 }
 
-.topo-do-site img { /*imagem | header*/
-    width: 50%;}
+.topo-do-site img { /*banner do header*/
+width: 425px;
+margin: auto;
+}
 
 .corpo { /*principal*/
     background-color: var(--cornsilk);
@@ -71,7 +77,8 @@ padding-bottom: 150px;
     list-style: none;
     cursor: pointer;}
 
-span { /*preços*/
+ /*preços*/
+span { 
     margin-right: 10px;
     font-size: 25px;
     font-family: "Sedan", cursive;
@@ -80,19 +87,37 @@ span { /*preços*/
     .links-lista { /*centralizador dos nomes da lista*/
     margin-left: 14px;}
 
-    .rodape {
-    background-color: #00FF00;
+    .rodape { /*rodape geral*/
+    background-color: var(--dimgray);
     font-family: "sedan" , cursive;
     font-size: 30px;
-    border: outset crimson 15px;}
+color: var(--white);
+justify-content: space-between;
+text-align: center;}
+
+.hr1 { /*linha do rodape*/
+    width: 80%;
+    margin: auto;}
+
+.banner-rodape { /*banner do rodape*/
+    width: 8%;}
+
+.svg-rodape img { /*ícones do rodape*/
+    max-width: 100%;}
+
+.paragrafo-rodape { /*parágrafo do rodape*/
+    text-align: center;}
+
+
+
+
 
 /*INDEX*/
 .titulo-principal { /*titulo do index*/
 text-align: center;
 font-size: 50px;
 font-family: "Sedan", cursive;
-margin: 10px;
-cursor: pointer;}
+margin: 10px;}
 
 button { /*botões do index*/
         height: 50px; 
@@ -147,7 +172,7 @@ text-align: center;
 
 /*HOVER*/
 .titulo-principal:hover { /*localizado no index*/ /*muda a cor do título*/
-    color: var(--crimson);}
+    color: var(--Dimgray);}
 
     button:hover { /*localizado no index*/ /*muda a cor de fundo dos botões*/
         background-color: var(--dimgray);}
@@ -240,75 +265,3 @@ font-size: 25px;
 padding: 1px;
 margin: auto;}
  
-/*ESPAÇO RESERVADO PARA @MEDIAS*/
-@media (min-width: 320px){
-    /*@media do index | 320px*/
-.sugestao-container img { /*media das imagens das sessões*/
-    width: 80%;
-    align-items: center;}
-
-a{
-    margin: 0px;}/*media dos links*/
-
-.titulo3 { /*media dos nomes*/
- align-items: center;}
-
-.input-botao { /*media dos botões*/
-margin-left: 65px;}
-
-.sugestao-container { /*media das sessões*/
-    margin: 0px;}
-
-.topo-do-site img { /*media do banner*/
-width: 30%;}
-
-.link-header img { /*media dos ícones*/
-    width: 40px;}
-
-.links-lista { /*media dos links da lista*/
-    margin-left: 0px;}}
-
-    /*@media do index | 375px*/
-@media (min-width: 375px){
-input {
-margin-left: 35px;} /*media das caixas de texto*/
-
-button { /*media dos botões*/
-    margin-left: 85px;
-    margin-bottom: 15px;}}
-
-/*@media do index | 425px*/
-@media (min-width: 425px){
-    input{ /*media das caixas de texto*/
-margin-left: 55px;}
-
-button{ /*media dos botões*/
-margin-left: 105px;}}
-
-/*@media do index | 768px*/
-@media (min-width: 768px){
-input{ /*media das caixas de texto*/
-margin-left: 40px;}
-
-button{ /*media dos botões*/
-    margin-left: 90px;}
-
-.topo-do-site img { /*media do banner*/
-    width: 85%;
-    margin-left: 0px;}}
-
-/*media do index | 1024px*/
-@media (min-width: 1024px){ 
-.input-botao {
-margin-left: 35px;
-}
-}
-
-/*MEDIA DOS MENUS*/
-@media (min-width: 1920px){
-    .input{
-        margin-right: 0px;}
-       span {
-        margin-left: 4px;}}
-
-    
