@@ -71,7 +71,7 @@ padding-bottom: 150px;
     list-style: none;
     cursor: pointer;}
 
-span {  /*preços*/
+span { /*preços*/
     margin-right: 10px;
     font-size: 25px;
     font-family: "Sedan", cursive;
@@ -218,11 +218,10 @@ margin-left: 0px;}
 
 .div-container { /*div das imagens dos menus*/
 display: flex;
-flex-direction: initial;
-    margin-bottom: 50px;}
+flex-direction: initial;}
 
     .div-container img { /*usado para tirar a margin-left das imagens do menu*/
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
 .descricao-menu{ /*descrição dos pratos dos menus*/
@@ -304,3 +303,12 @@ button{ /*media dos botões*/
 margin-left: 35px;
 }
 }
+
+/*MEDIA DOS MENUS*/
+@media (min-width: 1920px){
+    .input{
+        margin-right: 0px;}
+       span {
+        margin-left: 4px;}}
+
+    
