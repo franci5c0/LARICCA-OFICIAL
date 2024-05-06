@@ -45,27 +45,35 @@
         .link-header img {
     width: 60px;}
 
-/*header*/
 .topo-do-site{ 
     display: flex;
-    background-image: url(vi);
+   /* background-image: url(logos.png);
     background-repeat: no-repeat;
-    background-size: 100% 120%;
-   background-color: var(--silver);
-  /* width: 600px;
+    background-size: 100% 110%;
+   background-color: var(--black);*/
    margin-left: auto;
-   margin-right: auto;*/
-  
-}
+   margin-right: auto;} 
 
-.topo-do-site img { /*banner do header*/
-width: 425px;
-margin: auto;
+.titulo-container {/*titulo do header*/
+    font-size: 100px;
+color: var(--black);
+text-align: center;
+margin: 30px;}
+
+
+/*.topo-do-site img { /*banner do header*//*
+width: 50%;
+margin: auto;}
+*/
+
+.lista img {
+    border: outset var(--black) 3px;
+    margin: 15px;
 }
 
 .corpo { /*principal*/
     background-color: var(--cornsilk);
-    background-image: url(silver-gradient-with-highlights-vector-26457044.webp);
+    background-image: url(silver.webp);
     background-size: 100% 120%;
     background-repeat: no-repeat;}
 
@@ -75,9 +83,25 @@ margin: auto;
     align-items: center;
     font-size: 19px;;
     list-style: none;
-    cursor: pointer;}
+    cursor: pointer;
+border-top: solid var(--black) 2px;
+background-image: url(silver.webp);
+width: 100%;}
 
- 
+.stronger { /*texto geral dos links do header*/
+    margin-left: 10px;}
+
+    .stronger-bebida {/*texto da bebida no link header*/
+        margin-left: 20px;}
+    
+.stronger-home {/*texto da home no link header*/
+margin-left: 15px;}
+
+.stronger-sobremesa {/*texto da sobremesa no link header*/
+margin-left: 5px;}
+
+.stronger-petisco {   
+margin-left: 8px;}
 span { /*preços*/
     margin-right: 10px;
     font-size: 25px;
@@ -101,8 +125,6 @@ span { /*preços*/
 
 
 /*
-
->>>>>>> 074c677b115ac6744b365240e33747d7db5f8d84
 .rodape-container {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -112,14 +134,8 @@ span { /*preços*/
 
 .rede-social {
 display: flex;
-<<<<<<< HEAD
 justify-content: flex-endflex-end;}
-
-=======
-justify-content: flex-endflex-end;
-te
 }
->>>>>>> 074c677b115ac6744b365240e33747d7db5f8d84
 
 /*INDEX*/
 .titulo-principal { /*titulo do index*/
@@ -127,6 +143,11 @@ text-align: center;
 font-size: 50px;
 font-family: "Sedan", cursive;
 margin: 10px;}
+
+
+
+hr { /*linha abaixo dos htmls no index*/
+    border-bottom: solid 2px var(--black);}
 
 button { /*botões do index*/
         height: 50px; 
@@ -190,13 +211,15 @@ text-align: center;
 transition: all 0.5s;
    transform: scale(1.1);}
 
-    .botao:hover {
+    .botao:hover { /*animação dos botões dos menus*/
         cursor: pointer;
         transition: all 0.5s;
-        transform: scale(1.3);
-    }
-
-   
+        transform: scale(1.3);  }
+  
+.lista img:hover { /*animação das imagens nos links*/
+    transition: all;
+    transform: scale(1.2);
+}
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
@@ -222,9 +245,6 @@ transition: all 0.5s;
     border-radius: 20px;
     border: outset 2px var(--crimson);
 margin-left: 0px;}
-    
-    hr { /*espaço entre as divs dos menus (sem classe)*/
-    border-bottom: solid 4px var(--black);}
 
 .titulodrink { /*Usado no menu de drinks*/
     text-align: center;
