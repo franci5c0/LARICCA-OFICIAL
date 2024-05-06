@@ -99,9 +99,8 @@ span { /*preços*/
     width: 50%;
     margin: auto;}
 
-<<<<<<< HEAD
+
 /*
-=======
 
 >>>>>>> 074c677b115ac6744b365240e33747d7db5f8d84
 .rodape-container {
@@ -276,8 +275,6 @@ margin-right: 600px;} */ /*---> COMENTADO NO HTML*/ /*inutilizado*/
 font-size: 25px;
 padding: 1px;
 margin: auto;}
-<<<<<<< HEAD
-
 
 /*ALTERAÇÕES FEITAS EM OUTRA RESOLUÇÃO (EM CASA*/
 @media (min-width: 1366px) { /*comentar quando for alterar no SENAI*/
@@ -290,5 +287,3 @@ margin: auto;}
 .rede-social {
 justify-content: flex-endflex-end;}}
 
-=======
->>>>>>> 074c677b115ac6744b365240e33747d7db5f8d84
