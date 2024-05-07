@@ -144,8 +144,6 @@ font-size: 50px;
 font-family: "Sedan", cursive;
 margin: 10px;}
 
-
-
 hr { /*linha abaixo dos htmls no index*/
     border-bottom: solid 2px var(--black);}
 
@@ -180,8 +178,7 @@ border: outset var(--crimson) 5px;}
     border: outset var(--black) 3px;}
     
 .input-botao { /*botões do index*/
-margin-left: 35px;}
-
+margin-left: 90px;}
 
 .sugestao-container { /*sessão | index*/
     display: grid;
@@ -207,10 +204,6 @@ text-align: center;
     button:hover { /*localizado no index*/ /*muda a cor de fundo dos botões*/
         background-color: var(--dimgray);}
 
-.menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
-transition: all 0.5s;
-   transform: scale(1.1);}
-
     .botao:hover { /*animação dos botões dos menus*/
         cursor: pointer;
         transition: all 0.5s;
@@ -220,6 +213,12 @@ transition: all 0.5s;
     transition: all;
     transform: scale(1.2);
 }
+
+.sugestao-container img:hover { /*gira as imagens do indexm em 180 graus*/
+transition: all;
+transform: rotateY(180deg) 1s;
+}
+
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
@@ -296,6 +295,7 @@ font-size: 25px;
 padding: 1px;
 margin: auto;}
 
+
 /*ALTERAÇÕES FEITAS EM OUTRA RESOLUÇÃO (EM CASA*/
 @media (min-width: 1366px) { /*comentar quando for alterar no SENAI*/
 /*não esquecer de descomentar o original*/
@@ -303,7 +303,5 @@ margin: auto;}
     align-items: center;
     justify-content: space-between;}
 
-
 .rede-social {
 justify-content: flex-endflex-end;}}
-
