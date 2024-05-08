@@ -60,22 +60,15 @@
    background-color: var(--silver);
 height: 350px;}
 
-<<<<<<< HEAD
 /*
 .header-geral /*header fixado*/ /*{ /*DESCOMENTAR QUANDO COMENTAR O @MEDIA*
-=======
-.header-geral /*header fixado*/ {
->>>>>>> e44502120d624fa978c51d4187e4aff2827adc60
+ {
         position: sticky;
         z-index: 15;
         top: 0;
         right: 0;
         left: 0;
-<<<<<<< HEAD
         width: 100%;}*/
-=======
-        width: 100%;}
->>>>>>> e44502120d624fa978c51d4187e4aff2827adc60
 
 .topo-do-site img { /*banner do header*/
 margin: -50px 1250px;
@@ -302,7 +295,6 @@ margin-bottom: 20px;}
  
 }
 .titulo-sobre1 {
-<<<<<<< HEAD
     background-color: white;
     text-align: center;
     height: 100px;
@@ -347,9 +339,4 @@ height: 200px;}
 margin-left: 18px;}
 
  }
-=======
-    text-align: center;
-    height: 100;
-}
- 
->>>>>>> e44502120d624fa978c51d4187e4aff2827adc60
+
