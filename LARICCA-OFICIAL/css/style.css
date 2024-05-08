@@ -202,7 +202,7 @@ transition: all 0.5s;
     .lista img:hover { /*animação das imagens nos links*/
         transition: all;
         transform: scale(1.2);
-background-color: var(--chocolate);}
+background-color: var(--crimson);}
     
 
 /*MENUS*/
