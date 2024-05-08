@@ -42,33 +42,37 @@
         font-size: 20px;
         text-transform: uppercase;}
 
-        .link-header img {
+        .link-header img {/*imagens do link header*/
     width: 60px;}
 
-.topo-do-site{ 
+    .lista img { /*imagens da lista no link header*/
+        border: outset var(--black) 3px;
+        margin: 15px;
+        border-radius: 10px;
+        padding: 5px;
+    background-color: var(--white);}
+    
+.topo-do-site{ /*header*/
     display: flex;
-   /* background-image: url(logos.png);
+    background-image: url(vintage.jpg);
+    background-size: 100% 250%;
     background-repeat: no-repeat;
-    background-size: 100% 110%;
-   background-color: var(--black);*/
-   margin-left: auto;
-   margin-right: auto;} 
+   background-color: var(--silver);
+height: 350px;}
 
-.titulo-container {/*titulo do header*/
-    font-size: 100px;
-color: var(--black);
-text-align: center;
-margin: 30px;}
+/*
+.header-geral /*header fixado*/ /*{ /*DESCOMENTAR QUANDO COMENTAR O @MEDIA*
+        position: sticky;
+        z-index: 15;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;}*/
 
-
-/*.topo-do-site img { /*banner do header*//*
-width: 50%;
-margin: auto;}
-*/
-
-.lista img {
-    border: outset var(--black) 3px;
-    margin: 15px;
+.topo-do-site img { /*banner do header*/
+margin: -50px 1250px;
+max-width: 400px;
+height: 450px;
 }
 
 .corpo { /*principal*/
@@ -84,24 +88,10 @@ margin: auto;}
     font-size: 19px;;
     list-style: none;
     cursor: pointer;
-border-top: solid var(--black) 2px;
-background-image: url(silver.webp);
-width: 100%;}
+    background-color: var(--black);
+    color: var(--white);
+}
 
-.stronger { /*texto geral dos links do header*/
-    margin-left: 10px;}
-
-    .stronger-bebida {/*texto da bebida no link header*/
-        margin-left: 20px;}
-    
-.stronger-home {/*texto da home no link header*/
-margin-left: 15px;}
-
-.stronger-sobremesa {/*texto da sobremesa no link header*/
-margin-left: 5px;}
-
-.stronger-petisco {   
-margin-left: 8px;}
 span { /*preços*/
     margin-right: 10px;
     font-size: 25px;
@@ -109,7 +99,17 @@ span { /*preços*/
     margin: auto;}
 
     .links-lista { /*centralizador dos nomes da lista*/
-    margin-left: 14px;}
+    margin-left: px;}
+.stronger-pratos{/*nome dos pratos no link header*/
+    margin-left: 24px;}
+.stronger-home{/*nome da home no link header*/
+margin-left: 27px;}
+.stronger-bebida{/*nome das bebidas no link header*/
+margin-left: 18px;}
+.stronger-sobremesa{/*nome das sobremesas no link header*/
+    margin-left: 5px;}
+.stronger-petisco{/*nome dos petiscos no link header*/
+margin-left: 18px;}
 
     .rodape { /*rodape geral*/
     background-color: var(--dimgray);
@@ -121,31 +121,16 @@ span { /*preços*/
 
 .hr1 { /*linha do rodape*/
     width: 50%;
-    margin: auto;}
-
-
-/*
-.rodape-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    align-items: center;
-    justify-content: space-between;
-}
-
-.rede-social {
-display: flex;
-justify-content: flex-endflex-end;}
+    margin: auto;
 }
 
 /*INDEX*/
 .titulo-principal { /*titulo do index*/
-text-align: center;
-font-size: 50px;
-font-family: "Sedan", cursive;
-margin: 10px;}
-
-hr { /*linha abaixo dos htmls no index*/
-    border-bottom: solid 2px var(--black);}
+    text-align: center;
+    font-size: 50px;
+    font-family: "Sedan", cursive;
+    margin: 10px;
+    }
 
 button { /*botões do index*/
         height: 50px; 
@@ -180,6 +165,7 @@ border: outset var(--crimson) 5px;}
 .input-botao { /*botões do index*/
 margin-left: 90px;}
 
+
 .sugestao-container { /*sessão | index*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
@@ -198,33 +184,32 @@ text-align: center;
            margin: auto;}
 
 /*HOVER*/
-.titulo-principal:hover { /*localizado no index*/ /*muda a cor do título*/
-    color: var(--Dimgray);}
 
     button:hover { /*localizado no index*/ /*muda a cor de fundo dos botões*/
         background-color: var(--dimgray);}
 
-    .botao:hover { /*animação dos botões dos menus*/
+.menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
+transition: all 0.5s;
+   transform: scale(1.1);}
+
+    .botao:hover {
         cursor: pointer;
         transition: all 0.5s;
-        transform: scale(1.3);  }
-  
-.lista img:hover { /*animação das imagens nos links*/
-    transition: all;
-    transform: scale(1.2);
-}
+        transform: scale(1.3);
+    }
 
-.sugestao-container img:hover { /*gira as imagens do indexm em 180 graus*/
-transition: all;
-transform: rotateY(180deg) 1s;
-}
+    .lista img:hover { /*animação das imagens nos links*/
+        transition: all;
+        transform: scale(1.2);
+background-color: var(--chocolate);}
+    
 
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
     font-size: 40px;
     color: var(--dimgray);
-    margin: 20px;}
+    margin: 40px;}
         
 .menu-container { /*Sessão | menus*/
     display: flex;
@@ -244,6 +229,9 @@ transform: rotateY(180deg) 1s;
     border-radius: 20px;
     border: outset 2px var(--crimson);
 margin-left: 0px;}
+
+    hr { /*espaço entre as divs dos menus (sem classe)*/
+    border-bottom: solid 4px var(--black);}
 
 .titulodrink { /*Usado no menu de drinks*/
     text-align: center;
@@ -276,10 +264,10 @@ display: flex;
 flex-direction: initial;}
 
     .div-container img { /*usado para tirar a margin-left das imagens do menu*/
-        margin-left: 30px;
-    }
+        margin-left: 30px;}
+    
 
-.descricao-menu{ /*descrição dos pratos dos menus*/
+.descricao-menu { /*descrição dos pratos dos menus*/
 font-family: "sedan" , cursive;
 font-size: 40px; 
 /*margin: 150px; ----> /*em observação
@@ -293,15 +281,60 @@ margin-right: 600px;} */ /*---> COMENTADO NO HTML*/ /*inutilizado*/
 .ingredientes{ /*parágrafo dos menus*/
 font-size: 25px;
 padding: 1px;
-margin: auto;}
+margin: auto;
+margin-bottom: 20px;}
 
 
-/*ALTERAÇÕES FEITAS EM OUTRA RESOLUÇÃO (EM CASA*/
-@media (min-width: 1366px) { /*comentar quando for alterar no SENAI*/
-/*não esquecer de descomentar o original*/
-.rodape-container {
-    align-items: center;
-    justify-content: space-between;}
+/*SOBRE*/
+.titulo-sobre { /*Título sobre*/
+ height: 100px;  
+ display: grid; 
+ background-color: white;  
+ text-align: center;
+ 
+}
+.titulo-sobre1 {
+    background-color: white;
+    text-align: center;
+    height: 100px;
+}
+ 
 
-.rede-social {
-justify-content: flex-endflex-end;}}
+/*MEDIA*/ /*minha resolução*/
+@media (min-width: 1366px){ /*COMENTAR QUANDO FOR ALTERAR NO SENAI*/
+    .header-geral /*header fixado*/ {
+        position: sticky;
+        z-index: 15;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100% 10px}
+
+.topo-do-site img{
+
+ margin: -50px 900px;
+max-width: 250px;
+height: 320px;
+padding-bottom: 20px;
+}
+
+ .topo-do-site{ /*header*/
+    display: flex;
+    background-image: url(vintage.jpg);
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+   background-color: var(--silver);
+height: 200px;}
+
+.link-header img {/*imagens do link header*/
+    width: 50px;}
+
+    .lista img { /*imagens da lista no link header*/
+        border: outset var(--crimson) 3px;
+        margin: 5px;
+        border-radius: 10px;
+        padding: 5px;
+    background-color: var(--white);
+margin-left: 18px;}
+
+ }
