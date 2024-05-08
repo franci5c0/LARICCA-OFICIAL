@@ -1,1 +1,0 @@
-# laricca-novo
