@@ -60,13 +60,15 @@
    background-color: var(--silver);
 height: 350px;}
 
-.header-geral /*header fixado*/ {
+/*
+.header-geral /*header fixado*/ /*{ /*DESCOMENTAR QUANDO COMENTAR O @MEDIA*
+ {
         position: sticky;
         z-index: 15;
         top: 0;
         right: 0;
         left: 0;
-        width: 100%;}
+        width: 100%;}*/
 
 .topo-do-site img { /*banner do header*/
 margin: -50px 1250px;
@@ -200,7 +202,7 @@ transition: all 0.5s;
     .lista img:hover { /*animação das imagens nos links*/
         transition: all;
         transform: scale(1.2);
-background-color: var(--chocolate);}
+background-color: var(--crimson);}
     
 
 /*MENUS*/
@@ -295,6 +297,7 @@ margin-bottom: 20px;}
 }
 .titulo-sobre1 {
     background-color: white;
+<<<<<<< HEAD
     color: #8B0000;
     text-align: center;
     height: 100px;
@@ -335,3 +338,49 @@ margin-bottom: 20px;}
     background-color: var(--black);
     color: var(--darkred);
  }
+=======
+    text-align: center;
+    height: 100px;
+}
+ 
+
+/*MEDIA*/ /*minha resolução*/
+@media (min-width: 1366px){ /*COMENTAR QUANDO FOR ALTERAR NO SENAI*/
+    .header-geral /*header fixado*/ {
+        position: sticky;
+        z-index: 15;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100% 10px}
+
+.topo-do-site img{
+
+ margin: -50px 900px;
+max-width: 250px;
+height: 320px;
+padding-bottom: 20px;
+}
+
+ .topo-do-site{ /*header*/
+    display: flex;
+    background-image: url(vintage.jpg);
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+   background-color: var(--silver);
+height: 200px;}
+
+.link-header img {/*imagens do link header*/
+    width: 50px;}
+
+    .lista img { /*imagens da lista no link header*/
+        border: outset var(--crimson) 3px;
+        margin: 5px;
+        border-radius: 10px;
+        padding: 5px;
+    background-color: var(--white);
+margin-left: 18px;}
+
+ }
+
+>>>>>>> 8a96ecb51e1262aac10b825c5c46a2c05c8d1200
