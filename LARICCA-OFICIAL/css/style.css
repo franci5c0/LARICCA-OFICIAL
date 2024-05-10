@@ -288,12 +288,50 @@ margin-bottom: 20px;}
 .titulo-sobre { /*Título sobre*/
  height: 100px;  
  display: grid; 
- background-color: white;  
+ background-color: white;
+ color:#8B0000; 
  text-align: center;
  
 }
 .titulo-sobre1 {
+    background-color: white;
+    color: #8B0000;
     text-align: center;
-    height: 100;
+    height: 100px;
+
 }
+.titulo-sobre2 {
+    background-color: white;
+    color: #8B0000;
+    text-align: center;
+    height: 100px;
+
+}
+.titulo-sobre3 {
+    text-align: center;
+    
+    color: #8B0000;
+    
+}
+ /*USER*/
+ .contact {
+    background-color: var(--Dimgray);
+    padding: 30px; 
+    max-width: 600px;
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-bottom: 20px; 
+ }
+ .contact-label {
+    display: block; 
+    margin-bottom: 20px; 
+    color: var(--black); 
+ }
  
+ /*carrinho teste*/
+
+ .carrinho-container {
+    text-align: center;
+    background-color: var(--black);
+    color: var(--darkred);
+ }
