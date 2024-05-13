@@ -109,6 +109,9 @@ margin-left: 18px;
 }
 .stronger-sobremesa{/*nome das sobremesas no link header*/
     margin-left: 3px;
+
+    margin-left: 5px;
+
 }
 .stronger-petisco{/*nome dos petiscos no link header*/
 margin-left: 18px;
@@ -122,9 +125,11 @@ margin-left: 20px;
 .stronger-quem{/*nome do sobre no link header*/
 margin-left: 4px;
 }
+
 .stronger-teste{
 margin-left: 30px;
 }
+
 .hr1 { /*linha do rodape*/
     width: 50%;
     margin: auto;
@@ -392,6 +397,7 @@ input { /*caixas de texto do index*/
     display: flex;
     
 }
+
 .rodape-cartao {
     display: flex;
    gap: 10px;
@@ -408,7 +414,7 @@ input { /*caixas de texto do index*/
 p { /*parágrafos*/
     color: var(--black);
 }
-}
+
 
 /*MEDIA 320px*/
 @media (max-width: 320px){
@@ -432,6 +438,7 @@ font-size: 20px;
     max-width: 200px;
     height: 300px;
     
+}
 }
 }
 
