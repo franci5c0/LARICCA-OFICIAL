@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -47,8 +47,7 @@
         justify-content: center;
         margin-bottom: 20px;
         gap: 100px;
-    }
-
+}
 a { /*links*/  
     text-decoration: none;
     color: black;
@@ -56,11 +55,9 @@ a { /*links*/
     font-size: 20px;
     text-transform: uppercase;
 }
-
 .link-header img {/*imagens do link header*/
     width: 60px;
 }
-
 .lista img { /*imagens da lista no link header*/
     border: outset var(--black) 3px;
     margin: 15px;
@@ -68,7 +65,6 @@ a { /*links*/
     padding: 5px;
     background-color: var(--white);
 }
-  
 .topo-do-site{ /*header*/
     display: flex;
     background-image: url(fundo-site-2.png);
@@ -78,26 +74,22 @@ a { /*links*/
     height: 350px;
     justify-content: center;
 }
-
 .topo-do-site img { /*banner do header*/
 margin: -60px;
 max-width: 350px;
 height: 400px;
 }
- 
 .corpo { /*principal*/
     background-color: var(--cornsilk);
     background-size: 100% 120%;
     background-repeat: no-repeat;
 }
-
 span { /*preços*/
     margin-right: 10px;
     font-size: 25px;
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     margin: auto;
 }
-
 .stronger-pratos{/*nome dos pratos no link header*/
     margin-left: 24px;
 }
@@ -109,9 +101,7 @@ margin-left: 18px;
 }
 .stronger-sobremesa{/*nome das sobremesas no link header*/
     margin-left: 3px;
-
     margin-left: 5px;
-
 }
 .stronger-petisco{/*nome dos petiscos no link header*/
 margin-left: 18px;
@@ -125,11 +115,9 @@ margin-left: 20px;
 .stronger-quem{/*nome do sobre no link header*/
 margin-left: 4px;
 }
-
 .stronger-teste{
 margin-left: 30px;
 }
-
 .hr1 { /*linha do rodape*/
     width: 50%;
     margin: auto;
@@ -142,11 +130,9 @@ margin-left: 30px;
     font-family: "Sedan", cursive;
     margin: 10px;
 }
-
 hr { /*espaço entre as divs dos menus (sem classe)*/
     border-bottom: solid 2px var(--black);
 }
-
 button { /*botões do index*/
     height: 50px; 
     width: 100px;
@@ -154,15 +140,15 @@ button { /*botões do index*/
     margin: 5px;
     cursor: pointer; 
     font-size: 20px; 
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     margin-left: 50px;
 }
 .title{
-    font-family: "Sedan",cursive;
+    font-family: "DM Serif Display",cursive;
     text-align: center;
 }
 .text{
-    font-family: "Sedan",cursive;
+    font-family: "DM Serif Display",cursive;
     text-align: center;
 }
 .titulo2 { /*titulo secundário do index*/
@@ -170,7 +156,7 @@ button { /*botões do index*/
     border-radius: 10px;
     margin: 25px;
     padding: 5px;
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     font-size: 50px;
 }
 .titulo3 { /*nomes das sugestões no index*/
@@ -179,95 +165,88 @@ button { /*botões do index*/
     color: var(--white);
     border-radius: 10px;
     margin: 25px;
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     border: outset var(--black) 3px;
-}
-    
+} 
 .input-botao { /*botões do index*/
 margin-left: 90px;
 }
-
 .sugestao-container { /*sessão | index*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
     margin: 10px;
 }
-
 .sugestao-container img { /*imagem | sessão | index*/
     width: 310px;
     margin-left: 35px;
     border-radius: 20px;
     border: outset var(--gold) 5px;
 }
-
 input { /*caixas de texto do index*/
     height: 30px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     margin: auto;
 }
 
 /*HOVER*/
 .menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
-    transition: all 0.5s;
+    transition: all;
     transform: scale(1.1);
     }
-    
     .botao:hover {
         cursor: pointer;
      background-color: var(--gold);
     }
-        
     .lista img:hover { /*animação das imagens nos links*/
         transition: all;
         transform: scale(1.2);
         background-color: var(--gold);
-    }
-        
+    }  
     .links-lista:hover {
     color: var(--chocolate);
     }
-    
+
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
     font-size: 40px;
     color: var(--dimgray);
-    margin: 40px;}
-        
+    margin: 40px;
+}
 .menu-container { /*Sessão | menus*/
     display: flex;
-    flex-direction: column;}
- 
+    flex-direction: column;
+}
 .menu-container img { /*imagem | sessão | menus*/
     width: 510px;
     margin-left: 35px;
     border-radius: 20px;
-    border: outset var(--gold) 10px;}
-
+    border: outset var(--gold) 10px;
+}
 .hr { /*espaços entre as divs dos menus*/
     margin: 40px;
     background-color: var(--gold);
     width: 100%; 
     margin-left: 0px;
-    border: outset 2px var(--gold);}
-
+    border: outset 2px var(--gold);
+}
 .titulodrink { /*Usado no menu de drinks*/
     text-align: center;
     margin: 25px;
     padding: 5px;
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     color: var(--black);
-    font-size: 60px;}
-
+    font-size: 60px;
+}
 .input {/*caixas de texto dos menus*/
     height: 50px; 
     width: 100px;
     border-radius: 10px;
     text-align: center; 
     font-size: 40px;
-    margin-right: 5px;}
-
+    margin-right: 5px;
+}
 .botao {/*botões dos menus*/
     height: 50px; 
     width: 100px;
@@ -275,28 +254,30 @@ input { /*caixas de texto do index*/
     margin: auto;
     cursor: pointer; 
     font-size: 20px; 
-    font-family: "Sedan", cursive;
-    margin-left: 0px;}
-
+    font-family: "DM Serif Display", cursive;
+    margin-left: 0px;
+}
 .div-container { /*div das imagens dos menus*/
     display: flex;
-    flex-direction: initial;}
-
+    flex-direction: initial;
+}
 .div-container img { /*usado para tirar a margin-left das imagens do menu*/
-    margin-left: 30px;}
-
+    margin-left: 30px;
+}
 .descricao-menu { /*descrição dos pratos dos menus*/
-    font-family: "sedan" , cursive;
+    font-family: "DM Serif Display" , cursive;
     font-size: 40px; 
     /*margin: 150px; ----> /*em observação
     margin-right: 20px;*/
-    margin: auto;}
-     
+    margin: auto;
+} 
 .ingredientes{ /*parágrafo dos menus*/
     font-size: 25px;
     padding: 1px;
     margin: auto;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+font-family: "DM Serif Display", cursive;
+}
 
 /*SOBRE*/
 .titulo-sobre { /*Título sobre*/
@@ -341,7 +322,7 @@ input { /*caixas de texto do index*/
     display: block; 
     margin-bottom: 20px; 
     color: var(--black);
-    font-family: "Sedan",cursive;
+    font-family: "DM Serif Display",cursive;
 
 }
 
@@ -369,7 +350,7 @@ input { /*caixas de texto do index*/
 /*RODAPÉ*/
 .rodape { /*rodape geral*/
     background-color: var(--dimgray);
-    font-family: "sedan" , cursive;
+    font-family: "DM Serif Display" , cursive;
     font-size: 25px;
     color: var(--white);
     justify-content: space-between;
@@ -407,14 +388,13 @@ input { /*caixas de texto do index*/
     text-align: center;
     color: var(--white);
     margin: 25px;
-    font-family: "Sedan", cursive;
+    font-family: "DM Serif Display", cursive;
     color: var(--black);
 }
 
 p { /*parágrafos*/
     color: var(--black);
 }
-
 
 /*MEDIA 320px*/
 @media (max-width: 320px){
@@ -449,8 +429,16 @@ font-size: 20px;
 }
 .input-botao{
 margin-left: 67px;
+margin-bottom: 10px;
 }
 .link-header{
 gap: 0px;
+}
+.ingredientes{
+margin: 0px;
+margin-left: 550px;
+}
+.div-container img{
+margin-left: 5px;
 }
 }
