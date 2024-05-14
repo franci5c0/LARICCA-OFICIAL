@@ -47,7 +47,7 @@
         justify-content: center; /*alinha os itens no centro do flex*/
         margin-bottom: 20px; /*ajusta a margem de baixo*/
         gap: 100px; /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas */
-}
+    }
 a { /*LINKS*/  
     text-decoration: none; /*ajusta a decoração do texto*/
     color: var(--black); /*muda a cor do texto*/
@@ -55,9 +55,11 @@ a { /*LINKS*/
     font-size: 20px; /*altera o tamanho do texto*/
     text-transform: uppercase; /*deixa o texto em maiúsculo*/
 }
+
 li { /*LISTAS*/
 list-style: none; /*altera o estilo da <li>*/
 }
+
 .link-header img {/*IMAGENS NO LINK HEADER*/
     width: 60px; /*ajusta a largura da imagem*/
 }
@@ -224,7 +226,6 @@ input { /*caixas de texto do index*/
     font-size: 16px;
     margin: auto;
 }
-
 /*HOVER*/
 .menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
     transition: all;
@@ -242,7 +243,6 @@ input { /*caixas de texto do index*/
     .links-lista:hover {
     color: var(--chocolate);
     }
-
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
@@ -356,7 +356,6 @@ font-family: "DM Serif Display", cursive;
     margin-bottom: 20px;  
     border-radius: 10px;
 }
-
 .contact-label { /*caixas das caixas de texto*/
     display: block; 
     margin-bottom: 20px; 
@@ -364,12 +363,10 @@ font-family: "DM Serif Display", cursive;
     font-family: "DM Serif Display",cursive;
 
 }
-
 .button-label {
    margin-left: auto;
    margin-right: auto;
 }
-
 .contact-field {/*caixa de texto*/
     display: block; 
     width: 100%;
@@ -378,16 +375,12 @@ font-family: "DM Serif Display", cursive;
     padding-left: 10px; 
     border: none; 
 }
-
 /*carrinho teste*/
 .carrinho-container {
     text-align: center;
     background-color: var(--black);
     color: var(--darkred);
 }
-
-/*RODAPÉ*/
-
 }
 
 /*MEDIA 320px*/
@@ -419,7 +412,6 @@ margin-left: 15px; /*altera a margem esquerda do elemento*/
 font-size: 20px; /*altera o tamanho da fonte do texto*/
 }
 .input-botao{ /*botões do index*/
-
     margin-left: 0px;
 }
 }
