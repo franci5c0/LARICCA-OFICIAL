@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 * {
     margin: 0;
@@ -45,7 +46,11 @@
         color: var(--burly);
         justify-content: center;
         margin-bottom: 20px;
+
         gap: 100px; /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas */
+
+        gap: 100px;
+
 }
 a { /*links*/  
     text-decoration: none;
@@ -54,9 +59,11 @@ a { /*links*/
     font-size: 20px;
     text-transform: uppercase;
 }
+
 li {
 list-style: none;
 }
+
 .link-header img {/*imagens do link header*/
     width: 60px;
 }
@@ -214,9 +221,13 @@ input { /*caixas de texto do index*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
     font-size: 40px;
+
     color: var(--chocolate);
     margin: 40px;
     font-family: "DM Serif Display", cursive;
+    color: var(--dimgray);
+    margin: 40px;
+
 }
 .menu-container { /*Sessão | menus*/
     display: flex;
@@ -353,7 +364,9 @@ font-family: "DM Serif Display", cursive;
 
 /*RODAPÉ*/
 .rodape { /*rodape geral*/
+
     background-color: var(--gold);
+    background-color: var(--dimgray);
     font-family: "DM Serif Display" , cursive;
     font-size: 25px;
     color: var(--white);
@@ -387,12 +400,17 @@ font-size: 25px;
 }
 
 .titulo3-rodape { /*titulo do rodapé*/
-    
+
     text-align: center; /*alinha o texto no centro do site*/
     color: var(--white); /*muda a cor do elemento*/
     margin: 25px; /*mexe na margem do elemento*/
     font-family: "DM Serif Display", cursive; /*muda a fonte do texto*/
     color: var(--black); /*muda a cor do texto*/
+    text-align: center;
+    color: var(--white);
+    margin: 25px;
+    font-family: "DM Serif Display", cursive;
+    color: var(--black);
 }
 p { /*parágrafos*/
     
@@ -446,14 +464,6 @@ font-size: 20px; /*altera o tamanho da fonte do texto*/
 }
 }
 
-
-
-
-
-
-
-
-
 /*MEDIA 1366px*/
 @media (max-width: 1366px){
 .sugestao-container img{
@@ -474,5 +484,3 @@ margin-left: 550px;
 margin-left: 5px;
 }
 }
-
-/*
