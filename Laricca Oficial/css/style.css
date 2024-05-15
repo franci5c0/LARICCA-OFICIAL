@@ -412,39 +412,42 @@ margin-left: 15px; /*altera a margem esquerda do elemento*/
 font-size: 20px; /*altera o tamanho da fonte do texto*/
 }
 .input-botao{ /*botões do index*/
-    margin-left: 0px;
+    margin-left: 0px; /*ajusta a margem da esquerda*/
 }
 }
 
 /*MEDIA 375*/
-@media (max-width: 375px){ /*media com responsividade 375*/
+@media (max-width: 375px){ /*MEDIA COM RESPONSIVIDADE 375*/
     /*INDEX*/
-.link-header{
+.link-header{ /*CAIXA DOS ÍCONES NO HEADER*/
     display: flex; /*alinha os elementos na horizontal*/
     flex-flow: row wrap; /*flex em grade*/
 }
-.div-rodape{
+.div-rodape{ /*DIVISÃO QUE CONTROLA O RODAPÉ TOTAL*/
     display: block; /*alinha os elementos na vertical*/
 }
 }
 
 /*MEDIA 1366px*/
-@media (max-width: 1366px){
-.sugestao-container img{
+@media (max-width: 1366px){ /*MEDIA COM RESPONSIVIDADE 1366*/
+
+    /*INDEX*/
+.sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
     margin-left: 10px;
 }
-.input-botao{
+.input-botao{ /*BOTÕES DO INDEX*/
 margin-left: 67px;
 margin-bottom: 10px;
 }
-.link-header{
+.link-header{ /*ICONES DO HEADER NO INDEX*/
 gap: 0px;
 }
-.ingredientes{
-margin: 0px;
-margin-left: 550px;
+/*MENUS*/
+.ingredientes{ /*PARÁGRAFOS DOS MENUS*/
+margin: 0px; /*ajusta as margens dos 4 lados*/
+margin-left: 550px; /*ajusta a margem da esquerda*/
 }
-.div-container img{
-margin-left: 5px;
+.div-container img{ /*IMAGENS DAS SECTIONS DOS MENUS*/
+margin-left: 5px; /*ajsuta as margens da esquerda*/
 }
 }
