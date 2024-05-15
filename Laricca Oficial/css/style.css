@@ -46,9 +46,10 @@
         color: var(--burly); /*muda a cor do texto*/
         justify-content: center; /*alinha os itens no centro do flex*/
         margin-bottom: 20px; /*ajusta a margem de baixo*/
+
         gap: 100px; /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas*/                                                         
     }
-    
+
 a { /*LINKS*/  
     text-decoration: none; /*ajusta a decoração do texto*/
     color: var(--black); /*muda a cor do texto*/
@@ -132,6 +133,7 @@ margin-left: 4px;
 .stronger-teste{
 margin-left: 30px; /*ajusta a margem da esquerda*/
 }
+
 .rodape { /*RODAPÉ TOTAL*/
     background-color: var(--gold); /*altera a cor do background*/
     font-family: "DM Serif Display" , cursive; /*altera a fonte do texto*/
@@ -163,6 +165,45 @@ font-size: 25px; /*altera o tamanho do texto*/
     display: flex; /*alinha o elementos na horizontal*/
     gap: 80px; /*dá um espaçamento entre os itens*/
     justify-content: center; /*posiciona o item no centro do flex*/
+}
+.titulo3-rodape { /*TÍTULOS DO RODAPÉ*/
+    text-align: center; /*alinha o texto no centro do site*/
+    font-family: "DM Serif Display", cursive; /*muda a fonte do texto*/
+    color: var(--black); /*muda a cor do texto*/
+    text-align: center; /*alinha os textos no centro do site*/ /*muda a cor do texto*/
+    margin: 25px; /*ajusta as margens dos 4 cantos*/
+    font-family: "DM Serif Display", cursive; /*muda a fonte do texto*/
+}
+p { /*PARÁGRAFOS*/
+    color: var(--black); /*muda a cor do texto*/
+}
+    /*INDEX*/
+.titulo-principal { /*TÍTULO DO INDEX*/
+    text-align: center; /*alinha o texto no centro do site*/
+    font-size: 50px; /*altera o tamanho do texto*/
+    font-family: "DM Serif Display", cursive; /*muda a fonte do texto*/
+    margin: 10px;
+}
+hr { /*LINHA ENTRE AS DIVS E OS MENUS (sem classe)*/
+    border-bottom: solid 1px var(--black);/*altera a borda de baixo*/
+}
+
+.siga-a-gente{ /*CLASSE DAS REDES SOCIAIS NO RODAPÉ*/
+font-size: 25px; /*altera o tamanho do texto*/
+}
+.div-rodape { /*DIVISÃO QUE MEXE NO RODAPÉ COMPLETO*/
+    display: flex; /*alinha os itens na horizontal*/
+    max-width: 100%; /*define a largura máxima da imagem*/
+    gap: 110px; /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas */
+    background-color: var(--gold); /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas */
+}
+.rodape-lista4 {/*LISTA DO RODAPÉ*/
+    gap: 990px; /*define o tamanho do espaço entre as linhas e entre as colunas no flexbox, grade ou layout de múltiplas colunas */
+}   
+.rodape-cartao { /*FORMAS DE PAGAMENTO NO RODAPÉ*/
+    display: flex; /*alinha o elementos na horizontal*/
+    gap: 80px;
+    justify-content: center;
 }
 .titulo3-rodape { /*TÍTULOS DO RODAPÉ*/
     text-align: center; /*alinha o texto no centro do site*/
@@ -397,6 +438,182 @@ justify-content: center;
     font-family: "DM Serif Display", cursive;
     display: flex;
 justify-content: center;
+
+} 
+.input-botao { /*botões do index*/
+margin-left: 90px;
+}
+.sugestao-container { /*sessão | index*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr ));
+    margin: 10px;
+}
+.sugestao-container img { /*imagem | sessão | index*/
+    width: 310px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: outset var(--gold) 5px;
+}
+input { /*caixas de texto do index*/
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+}
+/*HOVER*/
+.menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
+    transition: all;
+    transform: scale(1.1);
+    }
+    .botao:hover {
+        cursor: pointer;
+     background-color: var(--gold);
+    }
+    .lista img:hover { /*animação das imagens nos links*/
+        transition: all;
+        transform: scale(1.2);
+        background-color: var(--gold);
+    }  
+    .links-lista:hover {
+    color: var(--chocolate);
+    }
+/*MENUS*/
+.alcool { /*sessões de drinks | menus*/
+    text-align: center;
+    font-size: 40px;
+    color: var(--chocolate);
+    margin: 40px;
+    font-family: "DM Serif Display", cursive;
+    color: var(--dimgray);
+    margin: 40px;
+}
+.menu-container { /*Sessão | menus*/
+    display: flex;
+    flex-direction: column;
+}
+.menu-container img { /*imagem | sessão | menus*/
+    width: 510px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: outset var(--gold) 10px;
+}
+.hr { /*espaços entre as divs dos menus*/
+    margin: 40px;
+    background-color: var(--gold);
+    width: 100%; 
+    margin-left: 0px;
+    border: outset 2px var(--gold);
+}
+.titulodrink { /*Usado no menu de drinks*/
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+    font-family: "DM Serif Display", cursive;
+    color: var(--black);
+    font-size: 60px;
+}
+.input {/*caixas de texto dos menus*/
+    height: 50px; 
+    width: 100px;
+    border-radius: 10px;
+    text-align: center; 
+    font-size: 40px;
+    margin-right: 5px;
+}
+.botao {/*botões dos menus*/
+    height: 50px; 
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer; 
+    font-size: 20px; 
+    font-family: "DM Serif Display", cursive;
+    margin-left: 0px;
+}
+.div-container { /*div das imagens dos menus*/
+    display: flex;
+    flex-direction: initial;
+}
+.div-container img { /*usado para tirar a margin-left das imagens do menu*/
+    margin-left: 30px;
+}
+.descricao-menu { /*descrição dos pratos dos menus*/
+    font-family: "DM Serif Display" , cursive;
+    font-size: 40px; 
+    /*margin: 150px; ----> /*em observação
+    margin-right: 20px;*/
+    margin: auto;
+} 
+.ingredientes{ /*parágrafo dos menus*/
+    font-size: 25px;
+    padding: 1px;
+    margin: auto;
+    margin-bottom: 20px;
+font-family: "DM Serif Display", cursive;
+}
+
+/*SOBRE*/
+.titulo-sobre { /*Título sobre*/
+    height: 100px;  
+    display: grid; 
+    background-color: white;
+    color:black; 
+    text-align: center;
+    
+   }
+   .titulo-sobre1 { /*bíblia do sobre*/
+       background-color: white;
+       color: black;
+       text-align: center;
+       height: 100px;
+   
+   }
+   .titulo-sobre2 {/*bíblia do sobre*/
+       background-color: white;
+       color: black;
+       text-align: center;
+       height: 100px;
+   
+   }
+   .titulo-sobre3 {/*bíblia do sobre*/
+       text-align: center;
+       color: black;}
+   
+
+ /*USER*/
+ .contact { /*caixa de contato*/
+    background-color: var(--burly);
+    padding: 30px; 
+    max-width: 600px;
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-bottom: 20px;  
+    border-radius: 10px;
+}
+.contact-label { /*caixas das caixas de texto*/
+    display: block; 
+    margin-bottom: 20px; 
+    color: var(--black);
+    font-family: "DM Serif Display",cursive;
+
+}
+.button-label {
+   margin-left: auto;
+   margin-right: auto;
+}
+.contact-field {/*caixa de texto*/
+    display: block; 
+    width: 100%;
+    height: 30px;  
+    font-size: 16px;  
+    padding-left: 10px; 
+    border: none; 
+}
+/*carrinho teste*/
+.carrinho-container {
+    text-align: center;
+    background-color: var(--black);
+    color: var(--darkred);
 }
 }
 
@@ -453,6 +670,15 @@ margin-bottom: 10px; /*ajusta a margem de baixo*/
 }
 .link-header{ /*ICONES DO HEADER NO INDEX*/
 gap: 0px; /*dá um espaçamento entre os itens*/
+    margin-left: 10px;
+}
+.input-botao{ /*BOTÕES DO INDEX*/
+margin-left: 67px;
+margin-bottom: 10px;
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px;
+
 }
 /*MENUS*/
 .ingredientes{ /*PARÁGRAFOS DOS MENUS*/
