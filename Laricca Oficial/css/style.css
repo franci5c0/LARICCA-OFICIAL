@@ -428,6 +428,16 @@ font-family: "DM Serif Display", cursive; /*altera a fonte do texto*/
     border: none; /*tira as bordas*/
 }
 /*TESTE CARRINHO*/
+.carrinho-container {
+    text-align: center; /*alinha o texto no centro do site*/
+   /* background-color: var(--black); /*altera a cor do background*/
+    color: var(--darkred); /*altera a cor do texto*/
+
+    display: flex; /*alinha os itens na horizontal*/
+    justify-content: center; /*alinha os itens dentro do flex*/
+ margin: 50px;
+}
+
 .div-h2 {
 display: flex;
 justify-content: center;
@@ -669,7 +679,6 @@ margin-left: 10px;
 .banner-header {
 margin-left: 560px;
 }
-
     /*INDEX*/
 .sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
     margin-left: 10px; /*ajusta a margem da esquerda*/
@@ -677,12 +686,21 @@ margin-left: 560px;
 .input-botao{ /*BOTÕES DO INDEX*/
 margin-left: 67px; /*ajusta a margem da esquerda*/
 margin-bottom: 10px; /*ajusta a margem de baixo*/
+
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px; /*dá um espaçamento entre os itens*/
+    margin-left: 10px;
+
 }
 .input-botao{ /*BOTÕES DO INDEX*/
 margin-left: 67px;
 margin-bottom: 10px;
 }
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px;
 
+}
 /*MENUS*/
 .ingredientes{ /*PARÁGRAFOS DOS MENUS*/
 margin: 0px; /*ajusta as margens dos 4 lados*/
