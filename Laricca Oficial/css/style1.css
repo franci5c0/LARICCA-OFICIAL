@@ -666,42 +666,6 @@ font-size: 20px; /*altera o tamanho da fonte do texto*/
 }
 }
 
-/*MEDIA 1366px*/
-@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/}
-
-    /*INDEX*/
-.sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
-    margin-left: 10px; /*ajusta a margem da esquerda*/
-}
-.input-botao{ /*BOTÕES DO INDEX*/
-margin-left: 67px; /*ajusta a margem da esquerda*/
-margin-bottom: 10px; /*ajusta a margem de baixo*/
-}
-.link-header{ /*ICONES DO HEADER NO INDEX*/
-gap: 0px; /*dá um espaçamento entre os itens*/
-    margin-left: 10px;
-}
-.input-botao{ /*BOTÕES DO INDEX*/
-margin-left: 67px;
-margin-bottom: 10px;
-}
-.link-header{ /*ICONES DO HEADER NO INDEX*/
-gap: 0px;
-
-}
-/*MENUS*/
-.ingredientes{ /*PARÁGRAFOS DOS MENUS*/
-margin: 0px; /*ajusta as margens dos 4 lados*/
-margin-left: 550px; /*ajusta a margem da esquerda*/
-}
-.div-container img { /*IMAGENS DAS SECTIONS DOS MENUS*/
-margin-left: 5px; /*ajsuta as margens da esquerda*/
-}
-
-.div-h2 {
-    color: black;
-    font-size: 70px;
-}
 
 
 /*ESPAÇO RESERVADO PARA INDEX1*/
@@ -736,7 +700,7 @@ width: 1700px;
 height: 700px;
 }
 
-.manual-navigation{
+.manual-navigation{ /*círculos na imagem*/
 position: absolute;
 width: 1700px;
 margin-top: 230px;
@@ -776,7 +740,7 @@ margin-left: 0;
     margin-left: -75%;
 }
 
-.navigation-auto div{
+.navigation-auto div{ /*círculos pretos na imagem*/
 border: 2px solid var(--black);
 padding: 5px;
 border-radius: 10px;
@@ -784,7 +748,7 @@ cursor: pointer;
 transform: 1s;
 }
 
-.navigation-auto{
+.navigation-auto{/*círculos pretos na imagem*/
 position: absolute;
 width: 1700px;
 margin-top: 630px;
@@ -811,3 +775,80 @@ background-color: var(--white);
 #radio4:checked ~ .navigation-auto .auto-btn4{
 background-color: var(--white);
 }
+
+
+
+/*MEDIA PESSOAL 1366px*/
+@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/}
+
+/*GERAL*/
+.banner-header {
+    margin-left: 578px;
+}
+
+
+    /*INDEX*/
+.sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
+    margin-left: 10px; /*ajusta a margem da esquerda*/
+}
+.input-botao{ /*BOTÕES DO INDEX*/
+margin-left: 67px; /*ajusta a margem da esquerda*/
+margin-bottom: 10px; /*ajusta a margem de baixo*/
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px; /*dá um espaçamento entre os itens*/
+    margin-left: 10px;
+}
+.input-botao{ /*BOTÕES DO INDEX*/
+margin-left: 67px;
+margin-bottom: 10px;
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px;
+
+}
+/*MENUS*/
+.ingredientes{ /*PARÁGRAFOS DOS MENUS*/
+margin: 0px; /*ajusta as margens dos 4 lados*/
+margin-left: 550px; /*ajusta a margem da esquerda*/
+}
+.div-container img { /*IMAGENS DAS SECTIONS DOS MENUS*/
+margin-left: 5px; /*ajsuta as margens da esquerda*/
+}
+
+.div-h2 {
+    color: black;
+    font-size: 70px;
+}
+
+/*IMAGENS DE TRANSIÇÃO NO INDEX*/
+.slider{ /*DIV GERAL DAS IMAGENS DA TRANSIÇÃO*/
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    border: outset 8px var(--gold);
+    border-radius: 20px;
+    }
+
+.manual-navigation{
+ position: absolute;
+width: 1000px;
+ margin-top: 130px;
+ display: flex;
+ justify-content: center;
+}
+
+.navigation-auto{/*círculos pretos na imagem*/
+    position: absolute;
+       width: 1000px;
+      margin-top: 530px;
+     display: flex;
+     justify-content: center;
+     }
+
+
+     .slide img{ /*IMAGEM DO SLIDE*/
+        width: 1000px;
+        height: 600px;
+        }
