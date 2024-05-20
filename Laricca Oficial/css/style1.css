@@ -282,10 +282,19 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
     margin: auto; /*ajusta as margens automaticamente*/
 }
 /*HOVER*/
+.menu-container img:hover { /*ANIMAÇÃO DAS IMAGENS DOS MENUS*/
+    transition: all; /*permite transição para todos os itens selecionados*/
+    transform: scale(1.1); /*ajusta a transição*/
+    }
     .botao:hover { /*ANIMAÇÃO DOS BOTÕES NOS MENUS*/
         cursor: pointer; /*transforma o ponteiro do mouse em uma mão clicando*/
      background-color: var(--gold); /*altera a cor do background*/
     }
+    .lista img:hover { /*ANIMAÇÃO DAS IMAGENS NA LISTA*/
+        transition: all; /*permite transição para todos os itens selecionados*/
+        transform: scale(1.2); /*ajusta a transição*/
+        background-color: var(--gold); /*altera a cor do background*/
+    }  
     .links-lista:hover { /*ANIMAÇÃO DOS NOMES DOS LINKS NA LISTA*/
     color: var(--chocolate); /*altera a cor do texto*/
     }
@@ -293,7 +302,6 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
     button:hover{ /*BOTÕES DO CARRINHO (REMOVER)*/
         background-color: var(--chocolate);
     }
-  
 
 /*MENUS*/
 .alcool { /*SECTIONS DE TIPOS DE BEBIDAS NO MENU DRINKS*/
@@ -462,9 +470,8 @@ input { /*caixas de texto do index*/
 }
 /*HOVER*/
 .menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
-    transition: all 2.5s;
-    transform: rotateY(180deg);
-    cursor: pointer;
+    transition: all;
+    transform: scale(1.1);
     }
     .botao:hover {
         cursor: pointer;
@@ -534,6 +541,9 @@ input { /*caixas de texto do index*/
 .div-container { /*div das imagens dos menus*/
     display: flex;
     flex-direction: initial;
+}
+.div-container img { /*usado para tirar a margin-left das imagens do menu*/
+    margin-left: 30px;
 }
 .descricao-menu { /*descrição dos pratos dos menus*/
     font-family: "DM Serif Display" , cursive;
@@ -657,7 +667,7 @@ font-size: 20px; /*altera o tamanho da fonte do texto*/
 }
 
 /*MEDIA 1366px*/
-@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/
+@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/}
 
     /*INDEX*/
 .sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
@@ -685,7 +695,7 @@ margin: 0px; /*ajusta as margens dos 4 lados*/
 margin-left: 550px; /*ajusta a margem da esquerda*/
 }
 .div-container img { /*IMAGENS DAS SECTIONS DOS MENUS*/
-
+margin-left: 5px; /*ajsuta as margens da esquerda*/
 }
 
 .div-h2 {
@@ -800,5 +810,4 @@ background-color: var(--white);
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
 background-color: var(--white);
-}
 }
