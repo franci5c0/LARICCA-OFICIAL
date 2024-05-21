@@ -100,6 +100,7 @@ height: 400px; /*ajusta a altura da imagem*/
 
 .banner-header {
     margin-left: 850px;
+   
 }
 .corpo { /*CORPO DO SITE*/
     background-color: var(--cornsilk); /*altera a cor do background*/
@@ -637,6 +638,7 @@ font-size: 20px; /*altera o tamanho da fonte do texto*/
 
 /*MEDIA 375*/
 @media (max-width: 375px){ /*MEDIA COM RESPONSIVIDADE 375*/
+
     /*INDEX*/
 .link-header{ /*CAIXA DOS ÍCONES NO HEADER*/
     display: flex; /*alinha os elementos na horizontal*/
@@ -766,13 +768,12 @@ background-color: var(--white);
 }
 
 /*MEDIA PESSOAL 1366px*/
-@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/}
+@media (max-width: 1366px){ /*MEDIA COM RESPONSIVIDADE 1366*/}
 
 /*GERAL*/
-.banner-header {
-    margin-left: 578px;
-}
+.banner-header{
 
+}
     /*INDEX*/
 .sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
     margin-left: 10px; /*ajusta a margem da esquerda*/
