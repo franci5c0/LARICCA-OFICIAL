@@ -281,11 +281,17 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
     font-size: 16px; /*altera o tamanho do texto*/
     margin: auto; /*ajusta as margens automaticamente*/
 }
+
 /*HOVER*/
     .botao:hover { /*ANIMAÇÃO DOS BOTÕES NOS MENUS*/
         cursor: pointer; /*transforma o ponteiro do mouse em uma mão clicando*/
      background-color: var(--gold); /*altera a cor do background*/
     }
+    .lista img:hover { /*ANIMAÇÃO DAS IMAGENS NA LISTA*/
+        transition: all; /*permite transição para todos os itens selecionados*/
+        transform: scale(1.2); /*ajusta a transição*/
+        background-color: var(--gold); /*altera a cor do background*/
+    }  
     .links-lista:hover { /*ANIMAÇÃO DOS NOMES DOS LINKS NA LISTA*/
     color: var(--chocolate); /*altera a cor do texto*/
     }
@@ -293,7 +299,6 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
     button:hover{ /*BOTÕES DO CARRINHO (REMOVER)*/
         background-color: var(--chocolate);
     }
-  
 
 /*MENUS*/
 .alcool { /*SECTIONS DE TIPOS DE BEBIDAS NO MENU DRINKS*/
@@ -460,24 +465,7 @@ input { /*caixas de texto do index*/
     font-size: 16px;
     margin: auto;
 }
-/*HOVER*/
-.menu-container img:hover { /*localizado nos menus*/ /*gira as imagens*/
-    transition: all 2.5s;
-    transform: rotateY(180deg);
-    cursor: pointer;
-    }
-    .botao:hover {
-        cursor: pointer;
-     background-color: var(--gold);
-    }
-    .lista img:hover { /*animação das imagens nos links*/
-        transition: all;
-        transform: scale(1.2);
-        background-color: var(--gold);
-    }  
-    .links-lista:hover {
-    color: var(--chocolate);
-    }
+
 /*MENUS*/
 .alcool { /*sessões de drinks | menus*/
     text-align: center;
@@ -534,6 +522,9 @@ input { /*caixas de texto do index*/
 .div-container { /*div das imagens dos menus*/
     display: flex;
     flex-direction: initial;
+}
+.div-container img { /*usado para tirar a margin-left das imagens do menu*/
+    margin-left: 30px;
 }
 .descricao-menu { /*descrição dos pratos dos menus*/
     font-family: "DM Serif Display" , cursive;
@@ -655,47 +646,11 @@ font-size: 20px; /*altera o tamanho da fonte do texto*/
     display: block; /*alinha os elementos na vertical*/
 }
 }
+/*FINAL | MEDIA*/
 
-/*MEDIA 1366px*/
-@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/
+/*ESPAÇO RESERVADO PARA ANIMAÇÕES COM JAVASCRIPT*/
 
-    /*INDEX*/
-.sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
-    margin-left: 10px; /*ajusta a margem da esquerda*/
-}
-.input-botao{ /*BOTÕES DO INDEX*/
-margin-left: 67px; /*ajusta a margem da esquerda*/
-margin-bottom: 10px; /*ajusta a margem de baixo*/
-}
-.link-header{ /*ICONES DO HEADER NO INDEX*/
-gap: 0px; /*dá um espaçamento entre os itens*/
-    margin-left: 10px;
-}
-.input-botao{ /*BOTÕES DO INDEX*/
-margin-left: 67px;
-margin-bottom: 10px;
-}
-.link-header{ /*ICONES DO HEADER NO INDEX*/
-gap: 0px;
-
-}
-/*MENUS*/
-.ingredientes{ /*PARÁGRAFOS DOS MENUS*/
-margin: 0px; /*ajusta as margens dos 4 lados*/
-margin-left: 550px; /*ajusta a margem da esquerda*/
-}
-.div-container img { /*IMAGENS DAS SECTIONS DOS MENUS*/
-
-}
-
-.div-h2 {
-    color: black;
-    font-size: 70px;
-}
-
-
-/*ESPAÇO RESERVADO PARA INDEX1*/
-
+/*INDEX*/
 .slider{ /*DIV GERAL DAS IMAGENS DA TRANSIÇÃO*/
 margin: 0 auto;
 width: 1700px;
@@ -726,7 +681,7 @@ width: 1700px;
 height: 700px;
 }
 
-.manual-navigation{
+.manual-navigation{ /*círculos na imagem*/
 position: absolute;
 width: 1700px;
 margin-top: 230px;
@@ -766,7 +721,11 @@ margin-left: 0;
     margin-left: -75%;
 }
 
-.navigation-auto div{
+#radio5:checked ~ .first{ /*filho4*/
+margin-left: -100%;
+}
+
+.navigation-auto div{ /*círculos pretos na imagem*/
 border: 2px solid var(--black);
 padding: 5px;
 border-radius: 10px;
@@ -774,7 +733,7 @@ cursor: pointer;
 transform: 1s;
 }
 
-.navigation-auto{
+.navigation-auto{/*círculos pretos na imagem*/
 position: absolute;
 width: 1700px;
 margin-top: 630px;
@@ -801,4 +760,82 @@ background-color: var(--white);
 #radio4:checked ~ .navigation-auto .auto-btn4{
 background-color: var(--white);
 }
+
+#radio5:checked ~.navigation-auto .auto-btn5{
+background-color: var(--white);
 }
+
+/*MEDIA PESSOAL 1366px*/
+@media (max-width: 1366px) { /*MEDIA COM RESPONSIVIDADE 1366*/}
+
+/*GERAL*/
+.banner-header {
+    margin-left: 578px;
+}
+
+    /*INDEX*/
+.sugestao-container img{ /*IMAGENS DAS SECTIONS DO INDEX*/
+    margin-left: 10px; /*ajusta a margem da esquerda*/
+}
+.input-botao{ /*BOTÕES DO INDEX*/
+margin-left: 67px; /*ajusta a margem da esquerda*/
+margin-bottom: 10px; /*ajusta a margem de baixo*/
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px; /*dá um espaçamento entre os itens*/
+    margin-left: 10px;
+}
+.input-botao{ /*BOTÕES DO INDEX*/
+margin-left: 67px;
+margin-bottom: 10px;
+}
+.link-header{ /*ICONES DO HEADER NO INDEX*/
+gap: 0px;
+
+}
+/*MENUS*/
+.ingredientes{ /*PARÁGRAFOS DOS MENUS*/
+margin: 0px; /*ajusta as margens dos 4 lados*/
+margin-left: 550px; /*ajusta a margem da esquerda*/
+}
+.div-container img { /*IMAGENS DAS SECTIONS DOS MENUS*/
+margin-left: 10px; /*ajsuta as margens da esquerda*/
+}
+
+.div-h2 {
+    color: black;
+    font-size: 70px;
+}
+
+/*IMAGENS DE TRANSIÇÃO NO INDEX*/
+.slider{ /*DIV GERAL DAS IMAGENS DA TRANSIÇÃO*/
+    margin: 0 auto;
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+    border: outset 8px var(--gold);
+    border-radius: 20px;
+    }
+
+.manual-navigation{ /*círculos dourados na imagem*/
+ position: absolute;
+width: 1000px;
+ margin-top: 5px;
+ display: flex;
+ justify-content: center;
+}
+
+.navigation-auto{/*círculos pretos na imagem*/
+    position: absolute;
+       width: 1000px;
+      margin-top: 405px;
+     display: flex;
+     justify-content: center;
+     }
+
+
+     .slide img{ /*IMAGEM DO SLIDE*/
+        width: 1000px;
+        height: 435px;
+        
+        }
