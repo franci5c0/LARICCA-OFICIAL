@@ -356,6 +356,8 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
 }
 .div-container { /*DIV DOS MENUS*/
     display: flex; /*alinha os itens na horizontal*/
+    margin: 100px;
+    background-color: #00FF00;
 }
 .div-container img { /*DIV DAS IMAGENS DOS MENUS*/
     margin-left: 30px; /*ajusta a margem da esquerda*/
@@ -370,8 +372,8 @@ input { /*CAIXAS DE TEXTO DO INDEX*/
 .ingredientes{ /*INGREDIENTES NOS MENUS*/
     font-size: 25px; /*altera o tamanho do texto*/
     padding: 1px; /*empurra para todos os lados*/
-    margin: auto; /*ajusta as margens automaticamente*/
-    margin-bottom: 20px; /*ajusta a margem de baixo*/
+    /*margin: auto; /*ajusta as margens automaticamente*/
+    /*margin-bottom: 20px; /*ajusta a margem de baixo*/
 font-family: "DM Serif Display", cursive; /*altera a fonte do texto*/
 }
 /*SOBRE*/
@@ -606,6 +608,137 @@ font-family: "DM Serif Display", cursive;
     color: var(--darkred);
 }
 }
+
+
+/*NOVO MENU GERAL*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MEDIA 320px*/
 @media (max-width: 320px){ /*media com responsividade 320*/
